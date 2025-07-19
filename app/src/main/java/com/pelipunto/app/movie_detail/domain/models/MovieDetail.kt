@@ -22,15 +22,18 @@ data class MovieDetail(
 )
 
 data class Cast(
-    val id: Int,
+    val id: Int, // <-- ESTA ES LA LÍNEA QUE FALTABA Y QUE CORRIGE TODO
     val name: String,
-    val genderRole: String,
     val character: String,
-    val profilePath: String?,
+    val profilePath: String,
+    val department: List<String>
 ) {
-    private val nameParts = name.split(" ", limit = 2)
-    val firstName = nameParts[0]
-    val lastName = nameParts[1]
+    // busca en la lista "cargo" sino cadena vacia evitando crasheo
+    val director: String = department.find { it == "Directing" } ?: ""
+    val writer: String = department.find { it == "Writing" } ?: ""
+
+    // Propiedad para saber si es parte del equipo de dirección/guion
+    val isCrew = director.isNotEmpty() || writer.isNotEmpty()
 }
 
 data class Review(

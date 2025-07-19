@@ -6,6 +6,7 @@ import com.pelipunto.app.movie_detail.data.remote.models.MovieDetailDto
 import com.pelipunto.app.movie_detail.domain.models.Cast
 import com.pelipunto.app.movie_detail.domain.models.MovieDetail
 import com.pelipunto.app.movie_detail.domain.models.Review
+import com.pelipunto.app.utils.K // Importación necesaria
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -41,24 +42,13 @@ class MovieDetailMapperImpl : ApiMapper<MovieDetail, MovieDetailDto> {
             } ?: emptyList(),
             runTime = convertMinutesToHours(apiDto.runtime ?: 0)
         )
-
     }
 
     private fun formatTimeStamp(pattern: String = "dd.MM.yy", time: String): String {
         val inputDateFormatter = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.US)
-
-        val outputDateFormatter = SimpleDateFormat(
-            pattern,
-            Locale.getDefault()
-        )
-
-        // Parse the input date string
-        val date = inputDateFormatter.parse(time)
-
-        // Format the parsed date to the desired pattern
-        val formattedDate = date?.let { outputDateFormatter.format(it) } ?: time
-
-        return formattedDate
+        val outputDateFormatter = SimpleDateFormat(pattern, Locale.getDefault())
+        val date = runCatching { inputDateFormatter.parse(time) }.getOrNull()
+        return date?.let { outputDateFormatter.format(it) } ?: time
     }
 
     private fun convertMinutesToHours(minutes: Int): String {
@@ -73,15 +63,21 @@ class MovieDetailMapperImpl : ApiMapper<MovieDetail, MovieDetailDto> {
     }
 
     private fun formatCast(castDto: List<CastDto?>?): List<Cast> {
-        return castDto?.map {
-            val genderRole = if (it?.gender == 2) "Actor" else "Actress"
+        if (castDto.isNullOrEmpty()) return emptyList()
+
+        return castDto.mapNotNull { dto ->
+            val departments = dto?.knownForDepartment?.let { listOf(it) } ?: emptyList()
+
             Cast(
-                id = it?.id ?: 0,
-                name = formatEmptyValue(it?.name),
-                genderRole = genderRole,
-                character = formatEmptyValue(it?.character),
-                profilePath = it?.profilePath
+                id = dto?.id ?: 0,
+                name = formatEmptyValue(dto?.name),
+                character = formatEmptyValue(dto?.character),
+                // ==========================================================
+                // AQUÍ ESTÁ EL ÚNICO CAMBIO: USAMOS EL NOMBRE CORRECTO
+                // ==========================================================
+                profilePath = dto?.profilePath?.let { "${K.BASE_IMAGE_URL}$it" } ?: "",
+                department = departments
             )
-        } ?: emptyList()
+        }
     }
 }

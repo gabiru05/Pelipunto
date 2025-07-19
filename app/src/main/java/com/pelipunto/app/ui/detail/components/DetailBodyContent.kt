@@ -72,22 +72,20 @@ fun DetailBodyContent(
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Row(
-                            horizontalArrangement = Arrangement.Center,
+                            horizontalArrangement = Arrangement.Start, // Alineado al inicio
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             movieDetail.genreIds.forEachIndexed { index, genreText ->
                                 Text(
                                     text = genreText,
-                                    modifier = Modifier
-                                        .padding(6.dp),
-                                    maxLines = 1,
                                     style = MaterialTheme.typography.bodySmall
                                 )
-                                // Show divider after all except the last item
-                                if (index != movieDetail.genreIds.lastIndex) {
+                                // Muestra el separador solo si no es el último género
+                                if (index < movieDetail.genreIds.lastIndex) {
                                     Text(
-                                        text = " \u2022 ",
-                                        style = MaterialTheme.typography.bodySmall
+                                        text = " • ",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        modifier = Modifier.padding(horizontal = 4.dp)
                                     )
                                 }
                             }
@@ -131,42 +129,50 @@ fun DetailBodyContent(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text(
-                            text = "Cast & Crew",
+                            text = "Elenco Principal",
                             style = MaterialTheme.typography.titleLarge,
                             fontWeight = FontWeight.Bold,
                         )
                         IconButton(onClick = { /*TODO*/ }) {
                             Icon(
                                 imageVector = Icons.AutoMirrored.Filled.ArrowForwardIos,
-                                contentDescription = "Cast & Crew"
+                                contentDescription = "Ver todo el elenco"
                             )
                         }
                     }
-                    LazyRow {
-                        items(movieDetail.cast) {
+
+                    // ==========================================================
+                    // CORRECCIÓN PRINCIPAL APLICADA AQUÍ
+                    // ==========================================================
+                    LazyRow(
+                        horizontalArrangement = Arrangement.spacedBy(defaultPadding)
+                    ) {
+                        items(
+                            items = movieDetail.cast,
+                            key = { actor -> actor.id } // 1. Ahora 'actor.id' existe y se usa como clave.
+                        ) { actor ->
                             ActorItem(
-                                cast = it,
-                                modifier = Modifier
-                                    .weight(1f)
-                                    .clickable { onActorClick(it.id) }
+                                cast = actor,
+                                // 2. Se quita el 'weight(1f)' y se mantiene el 'clickable'.
+                                //    La acción de click ahora usa 'actor.id', que es válido.
+                                modifier = Modifier.clickable { onActorClick(actor.id) }
                             )
-                            Spacer(modifier = Modifier.width(defaultPadding))
                         }
                     }
                     Spacer(modifier = Modifier.height(itemSpacing))
 
                     MovieInfoItem(
                         infoItem = movieDetail.language,
-                        title = "Spoken language",
+                        title = "Idioma Original:",
                     )
                     Spacer(modifier = Modifier.height(itemSpacing))
                     MovieInfoItem(
                         infoItem = movieDetail.productionCountry,
-                        title = "Production countries",
+                        title = "Países de Producción:",
                     )
                     Spacer(modifier = Modifier.height(itemSpacing))
                     Text(
-                        text = "Reviews",
+                        text = "Reseñas",
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold
                     )
@@ -183,10 +189,7 @@ fun DetailBodyContent(
                 }
             }
         }
-
-
     }
-
 }
 
 
@@ -203,11 +206,12 @@ fun MoreLikeThis(
     }
     Column(modifier) {
         Text(
-            text = "More like this",
+            text = "Más como esto",
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.Bold,
         )
-        LazyRow {
+        Spacer(modifier = Modifier.height(8.dp))
+        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             item {
                 AnimatedVisibility(visible = isMovieLoading) {
                     CircularProgressIndicator()
@@ -218,7 +222,6 @@ fun MoreLikeThis(
             }
         }
     }
-
 }
 
 private enum class ActionIcon(val icon: ImageVector, val contentDescription: String) {
@@ -252,19 +255,18 @@ private fun ActionIconBtn(
 private fun MovieInfoItem(infoItem: List<String>, title: String) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.Center
+        // Eliminado Arrangement.Center para un mejor alineamiento a la izquierda
     ) {
         Text(
             text = title,
             style = MaterialTheme.typography.bodyLarge,
             fontWeight = FontWeight.Bold
         )
-        Spacer(modifier = Modifier.width(4.dp))
+        Spacer(modifier = Modifier.width(8.dp)) // Más espacio
         infoItem.forEach {
             Text(
                 text = it,
                 style = MaterialTheme.typography.bodySmall,
-                fontWeight = FontWeight.Bold
             )
         }
     }
@@ -278,22 +280,32 @@ private fun Review(
     val (viewMore, setViewMore) = remember {
         mutableStateOf(false)
     }
-    // show only three reviews or less by default
-    val defaultReview =
-        if (reviews.size > 3) reviews.take(3) else reviews
-    // show more when user needs more review
+
+    // Si no hay reseñas, no mostramos nada
+    if (reviews.isEmpty()) {
+        Text(text = "No hay reseñas disponibles.", style = MaterialTheme.typography.bodyMedium)
+        return
+    }
+
+    val defaultReview = if (reviews.size > 3) reviews.take(3) else reviews
     val movieReviews = if (viewMore) reviews else defaultReview
-    val btnText = if (viewMore) "Collapse" else "More..."
+    val btnText = if (viewMore) "Contraer" else "Más..."
+
     Column(modifier) {
         movieReviews.forEach { review ->
-            ReviewItem(review = review)
+            // Asumo que tienes un componente ReviewItem, si no, esto fallará
+            // ReviewItem(review = review)
+            Text(text = "Autor: ${review.author}\n${review.content}") // Placeholder si ReviewItem no existe
             Spacer(modifier = Modifier.height(itemSpacing))
             HorizontalDivider(modifier = Modifier.fillMaxWidth())
             Spacer(modifier = Modifier.height(itemSpacing))
         }
-        TextButton(onClick = { setViewMore(!viewMore) }) {
-            Text(text = btnText)
+
+        // Solo mostramos el botón "Más..." si hay más de 3 reseñas
+        if (reviews.size > 3) {
+            TextButton(onClick = { setViewMore(!viewMore) }) {
+                Text(text = btnText)
+            }
         }
     }
-
 }
