@@ -156,14 +156,6 @@ fun LoginScreen(
                     Spacer(modifier = Modifier.height(24.dp))
                     CircularProgressIndicator()
                 }
-                if (!errorMessage.isNullOrEmpty()) {
-                    Spacer(modifier = Modifier.height(16.dp))
-                    Text(
-                        text = errorMessage,
-                        color = MaterialTheme.colorScheme.error,
-                        fontSize = 14.sp
-                    )
-                }
             }
             SnackbarHost(hostState = snackbarHostState, modifier = Modifier.align(Alignment.BottomCenter))
         }

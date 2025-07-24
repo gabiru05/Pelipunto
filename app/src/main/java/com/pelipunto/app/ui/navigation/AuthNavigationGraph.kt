@@ -15,14 +15,17 @@ import com.pelipunto.app.auth.RegisterScreen
 import com.pelipunto.app.ui.welcome.WelcomeScreen
 import com.pelipunto.app.auth.AuthResult
 import androidx.compose.runtime.collectAsState
+import com.pelipunto.app.auth.LogoutTestScreen
 
 @Composable
 fun AuthNavigationGraph(
     navController: NavHostController,
     modifier: Modifier = Modifier,
-    onAuthSuccess: () -> Unit
+    onAuthSuccess: () -> Unit,
+    onGoogleSignIn: ((String) -> Unit) -> Unit,
+    authViewModel: AuthViewModel
 ) {
-    val viewModel: AuthViewModel = hiltViewModel()
+    val viewModel = authViewModel
     val state by viewModel.authState.collectAsState()
 
     NavHost(
@@ -39,21 +42,27 @@ fun AuthNavigationGraph(
             AuthOptionsScreen(
                 onLoginClick = { navController.navigate("login") },
                 onRegisterClick = { navController.navigate("register") },
-                isLoggedIn = state.user != null,
-                onLogout = { viewModel.logout() }
+                isLoggedIn = false,
+                onLogout = { }
             )
         }
         composable("login") {
             LoginScreen(
                 onLoginClick = { email, password -> viewModel.loginWithEmail(email, password) },
-                onGoogleClick = { /* TODO: Google Sign-In */ },
+                onGoogleClick = {
+                    onGoogleSignIn { idToken ->
+                        viewModel.loginWithGoogle(idToken)
+                    }
+                },
                 onBack = { navController.popBackStack() },
                 isLoading = state.result is AuthResult.Loading,
                 errorMessage = (state.result as? AuthResult.Error)?.message
             )
             LaunchedEffect(state.result) {
                 if (state.result is AuthResult.Success) {
-                    onAuthSuccess()
+                    navController.navigate("logoutTest") {
+                        popUpTo("welcome") { inclusive = true }
+                    }
                     viewModel.clearResult()
                 }
             }
@@ -61,17 +70,28 @@ fun AuthNavigationGraph(
         composable("register") {
             RegisterScreen(
                 onRegisterClick = { name, email, password -> viewModel.registerWithEmail(name, email, password) },
-                onGoogleClick = { /* TODO: Google Sign-In */ },
+                onGoogleClick = {
+                    onGoogleSignIn { idToken ->
+                        viewModel.loginWithGoogle(idToken)
+                    }
+                },
                 onBack = { navController.popBackStack() },
                 isLoading = state.result is AuthResult.Loading,
                 errorMessage = (state.result as? AuthResult.Error)?.message
             )
             LaunchedEffect(state.result) {
                 if (state.result is AuthResult.Success) {
-                    onAuthSuccess()
+                    navController.navigate("logoutTest") {
+                        popUpTo("welcome") { inclusive = true }
+                    }
                     viewModel.clearResult()
                 }
             }
+        }
+        composable("logoutTest") {
+            LogoutTestScreen(
+                onLogout = { viewModel.logout() }
+            )
         }
     }
 } 
