@@ -110,4 +110,11 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     //splash
     implementation(libs.androidx.core.splashscreen)
+
+    // Firebase Auth
+    implementation("com.google.firebase:firebase-auth:22.3.0")
+    // Google Sign-In para autenticación con Google
+    implementation("com.google.android.gms:play-services-auth:21.1.0")
+    // Firebase BOM para manejo de versiones
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
 }

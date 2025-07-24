@@ -5,3 +5,4 @@ plugins {
     alias(libs.plugins.hilt.android.gradle) apply false
     alias(libs.plugins.ksp) apply false
 }
+
