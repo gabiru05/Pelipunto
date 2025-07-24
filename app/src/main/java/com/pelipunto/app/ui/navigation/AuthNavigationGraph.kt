@@ -15,7 +15,6 @@ import com.pelipunto.app.auth.RegisterScreen
 import com.pelipunto.app.ui.welcome.WelcomeScreen
 import com.pelipunto.app.auth.AuthResult
 import androidx.compose.runtime.collectAsState
-import com.pelipunto.app.auth.LogoutTestScreen
 
 @Composable
 fun AuthNavigationGraph(
@@ -60,9 +59,7 @@ fun AuthNavigationGraph(
             )
             LaunchedEffect(state.result) {
                 if (state.result is AuthResult.Success) {
-                    navController.navigate("logoutTest") {
-                        popUpTo("welcome") { inclusive = true }
-                    }
+                    onAuthSuccess()
                     viewModel.clearResult()
                 }
             }
@@ -81,17 +78,10 @@ fun AuthNavigationGraph(
             )
             LaunchedEffect(state.result) {
                 if (state.result is AuthResult.Success) {
-                    navController.navigate("logoutTest") {
-                        popUpTo("welcome") { inclusive = true }
-                    }
+                    onAuthSuccess()
                     viewModel.clearResult()
                 }
             }
-        }
-        composable("logoutTest") {
-            LogoutTestScreen(
-                onLogout = { viewModel.logout() }
-            )
         }
     }
 } 
