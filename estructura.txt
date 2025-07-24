@@ -1,0 +1,1699 @@
+Listado de rutas de carpetas para el volumen Windows-SSD
+El número de serie del volumen es AC44-90AD
+C:.
+¦   .gitattributes
+¦   .gitignore
+¦   build.gradle.kts
+¦   estructura.txt
+¦   gradle.properties
+¦   gradlew
+¦   gradlew.bat
+¦   local.properties
+¦   Readme.md
+¦   settings.gradle.kts
+¦   
++---.gradle
+¦   ¦   config.properties
+¦   ¦   file-system.probe
+¦   ¦   
+¦   +---8.7
+¦   ¦   ¦   gc.properties
+¦   ¦   ¦   
+¦   ¦   +---checksums
+¦   ¦   ¦       checksums.lock
+¦   ¦   ¦       md5-checksums.bin
+¦   ¦   ¦       sha1-checksums.bin
+¦   ¦   ¦       
+¦   ¦   +---dependencies-accessors
+¦   ¦   ¦   ¦   gc.properties
+¦   ¦   ¦   ¦   
+¦   ¦   ¦   +---21eab539b73cd40413b6c197a104c7fd3968cda8
+¦   ¦   ¦       ¦   metadata.bin
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---classes
+¦   ¦   ¦       ¦   +---org
+¦   ¦   ¦       ¦       +---gradle
+¦   ¦   ¦       ¦           +---accessors
+¦   ¦   ¦       ¦               +---dm
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxActivityLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxComposeLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxHiltLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxHiltNavigationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxLifecycleLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxLifecycleRuntimeLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxLifecycleViewmodelLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxMaterialIconsLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxMaterialLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxNavigationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxUiLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxUiTestLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$AndroidxUiToolingLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$BundleAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$CoilLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$HiltAndroidPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$HiltLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$HiltPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$JetbrainsKotlinPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$JetbrainsPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$KotlinPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$KotlinxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$KotlinxSerializationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$LoggingLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$PluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$Retrofit2KotlinxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$Retrofit2KotlinxSerializationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$Retrofit2LibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs$VersionAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibs.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxActivityLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxComposeLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxHiltLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxHiltNavigationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleRuntimeLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxLifecycleViewmodelLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxMaterialIconsLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxMaterialLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxNavigationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxUiLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxUiTestLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$AndroidxUiToolingLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$BundleAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$CoilLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$HiltAndroidPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$HiltLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$HiltPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$JetbrainsKotlinPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$JetbrainsPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$KotlinPluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$KotlinxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$KotlinxSerializationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$LoggingLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$PluginAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$Retrofit2KotlinxLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$Retrofit2KotlinxSerializationLibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$Retrofit2LibraryAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock$VersionAccessors.class
+¦   ¦   ¦       ¦                       LibrariesForLibsInPluginsBlock.class
+¦   ¦   ¦       ¦                       
+¦   ¦   ¦       +---sources
+¦   ¦   ¦           +---org
+¦   ¦   ¦               +---gradle
+¦   ¦   ¦                   +---accessors
+¦   ¦   ¦                       +---dm
+¦   ¦   ¦                               LibrariesForLibs.java
+¦   ¦   ¦                               LibrariesForLibsInPluginsBlock.java
+¦   ¦   ¦                               
+¦   ¦   +---executionHistory
+¦   ¦   ¦       executionHistory.bin
+¦   ¦   ¦       executionHistory.lock
+¦   ¦   ¦       
+¦   ¦   +---expanded
+¦   ¦   +---fileChanges
+¦   ¦   ¦       last-build.bin
+¦   ¦   ¦       
+¦   ¦   +---fileHashes
+¦   ¦   ¦       fileHashes.bin
+¦   ¦   ¦       fileHashes.lock
+¦   ¦   ¦       resourceHashesCache.bin
+¦   ¦   ¦       
+¦   ¦   +---vcsMetadata
+¦   +---buildOutputCleanup
+¦   ¦       buildOutputCleanup.lock
+¦   ¦       cache.properties
+¦   ¦       outputFiles.bin
+¦   ¦       
+¦   +---kotlin
+¦   ¦   +---errors
+¦   ¦   +---sessions
+¦   +---vcs-1
+¦           gc.properties
+¦           
++---.idea
+¦   ¦   .gitignore
+¦   ¦   AndroidProjectSystem.xml
+¦   ¦   compiler.xml
+¦   ¦   deploymentTargetSelector.xml
+¦   ¦   gradle.xml
+¦   ¦   migrations.xml
+¦   ¦   misc.xml
+¦   ¦   runConfigurations.xml
+¦   ¦   vcs.xml
+¦   ¦   workspace.xml
+¦   ¦   
+¦   +---caches
+¦           deviceStreaming.xml
+¦           
++---app
+¦   ¦   build.gradle.kts
+¦   ¦   proguard-rules.pro
+¦   ¦   
+¦   +---build
+¦   ¦   +---generated
+¦   ¦   ¦   +---ap_generated_sources
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---out
+¦   ¦   ¦   +---ksp
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---java
+¦   ¦   ¦   ¦       ¦   +---com
+¦   ¦   ¦   ¦       ¦   ¦   +---pelipunto
+¦   ¦   ¦   ¦       ¦   ¦       +---app
+¦   ¦   ¦   ¦       ¦   ¦           ¦   Hilt_MainActivity.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦   MainActivity_GeneratedInjector.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦   PelipuntoApplication_GeneratedInjector.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦   
+¦   ¦   ¦   ¦       ¦   ¦           +---di
+¦   ¦   ¦   ¦       ¦   ¦           ¦       MovieDetailModule_ProvideMovieDetailApiServiceFactory.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦       MovieDetailModule_ProvideMovieDetailRepositoryFactory.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦       MovieDetailModule_ProvideMovieMapperFactory.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦       MovieModule_ProvideMovieApiServiceFactory.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦       MovieModule_ProvideMovieMapperFactory.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦       MovieModule_ProvideMovieRepositoryFactory.java
+¦   ¦   ¦   ¦       ¦   ¦           ¦       
+¦   ¦   ¦   ¦       ¦   ¦           +---ui
+¦   ¦   ¦   ¦       ¦   ¦               +---detail
+¦   ¦   ¦   ¦       ¦   ¦               ¦       DetailViewModel_Factory.java
+¦   ¦   ¦   ¦       ¦   ¦               ¦       DetailViewModel_HiltModules.java
+¦   ¦   ¦   ¦       ¦   ¦               ¦       DetailViewModel_HiltModules_KeyModule_ProvideFactory.java
+¦   ¦   ¦   ¦       ¦   ¦               ¦       
+¦   ¦   ¦   ¦       ¦   ¦               +---home
+¦   ¦   ¦   ¦       ¦   ¦                       HomeViewModel_Factory.java
+¦   ¦   ¦   ¦       ¦   ¦                       HomeViewModel_HiltModules.java
+¦   ¦   ¦   ¦       ¦   ¦                       HomeViewModel_HiltModules_KeyModule_ProvideFactory.java
+¦   ¦   ¦   ¦       ¦   ¦                       
+¦   ¦   ¦   ¦       ¦   +---dagger
+¦   ¦   ¦   ¦       ¦   ¦   +---hilt
+¦   ¦   ¦   ¦       ¦   ¦       +---internal
+¦   ¦   ¦   ¦       ¦   ¦           +---aggregatedroot
+¦   ¦   ¦   ¦       ¦   ¦               +---codegen
+¦   ¦   ¦   ¦       ¦   ¦                       _com_pelipunto_app_PelipuntoApplication.java
+¦   ¦   ¦   ¦       ¦   ¦                       
+¦   ¦   ¦   ¦       ¦   +---hilt_aggregated_deps
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_di_MovieDetailModule.java
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_di_MovieModule.java
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_MainActivity_GeneratedInjector.java
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_PelipuntoApplication_GeneratedInjector.java
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_ui_detail_DetailViewModel_HiltModules_BindsModule.java
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_ui_detail_DetailViewModel_HiltModules_KeyModule.java
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_ui_home_HomeViewModel_HiltModules_BindsModule.java
+¦   ¦   ¦   ¦       ¦           _com_pelipunto_app_ui_home_HomeViewModel_HiltModules_KeyModule.java
+¦   ¦   ¦   ¦       ¦           
+¦   ¦   ¦   ¦       +---kotlin
+¦   ¦   ¦   +---res
+¦   ¦   ¦   ¦   +---pngs
+¦   ¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦   +---resValues
+¦   ¦   ¦   ¦       +---debug
+¦   ¦   ¦   +---source
+¦   ¦   ¦       +---buildConfig
+¦   ¦   ¦           +---debug
+¦   ¦   ¦               +---com
+¦   ¦   ¦                   +---pelipunto
+¦   ¦   ¦                       +---app
+¦   ¦   ¦                               BuildConfig.java
+¦   ¦   ¦                               
+¦   ¦   +---intermediates
+¦   ¦   ¦   +---aar_metadata_check
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---checkDebugAarMetadata
+¦   ¦   ¦   +---annotation_processor_list
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---javaPreCompileDebug
+¦   ¦   ¦   ¦               annotationProcessors.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---compatible_screen_manifest
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---createDebugCompatibleScreenManifests
+¦   ¦   ¦   ¦               output-metadata.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---compile_and_runtime_not_namespaced_r_class_jar
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugResources
+¦   ¦   ¦   ¦               R.jar
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---data_binding_layout_info_type_merge
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---mergeDebugResources
+¦   ¦   ¦   ¦           +---out
+¦   ¦   ¦   +---data_binding_layout_info_type_package
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---packageDebugResources
+¦   ¦   ¦   ¦           +---out
+¦   ¦   ¦   +---incremental
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---mergeDebugResources
+¦   ¦   ¦   ¦       ¦   ¦   compile-file-map.properties
+¦   ¦   ¦   ¦       ¦   ¦   merger.xml
+¦   ¦   ¦   ¦       ¦   ¦   
+¦   ¦   ¦   ¦       ¦   +---merged.dir
+¦   ¦   ¦   ¦       ¦   ¦   +---values
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-af
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-af.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-am
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-am.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ar
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ar.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-as
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-as.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-az
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-az.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-b+sr+Latn
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-b+sr+Latn.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-be
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-be.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-bg
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-bg.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-bn
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-bn.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-bs
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-bs.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ca
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ca.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-cs
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-cs.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-da
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-da.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-de
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-de.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-el
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-el.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-en-rAU
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-en-rAU.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-en-rCA
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-en-rCA.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-en-rGB
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-en-rGB.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-en-rIN
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-en-rIN.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-en-rXC
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-en-rXC.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-es
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-es.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-es-rUS
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-es-rUS.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-et
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-et.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-eu
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-eu.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-fa
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-fa.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-fi
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-fi.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-fr
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-fr.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-fr-rCA
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-fr-rCA.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-gl
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-gl.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-gu
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-gu.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-hi
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-hi.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-hr
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-hr.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-hu
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-hu.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-hy
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-hy.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-in
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-in.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-is
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-is.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-it
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-it.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-iw
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-iw.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ja
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ja.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ka
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ka.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-kk
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-kk.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-km
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-km.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-kn
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-kn.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ko
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ko.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ky
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ky.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-lo
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-lo.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-lt
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-lt.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-lv
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-lv.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-mk
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-mk.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ml.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-mn
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-mn.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-mr
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-mr.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ms
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ms.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-my
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-my.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-nb
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-nb.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ne
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ne.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-night-v8
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-night-v8.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-nl
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-nl.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-or
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-or.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-pa
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-pa.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-pl
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-pl.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-pt
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-pt.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-pt-rBR
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-pt-rBR.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-pt-rPT
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-pt-rPT.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ro
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ro.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ru
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ru.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-si
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-si.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-sk
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-sk.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-sl
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-sl.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-sq
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-sq.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-sr
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-sr.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-sv
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-sv.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-sw
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-sw.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ta
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ta.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-te
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-te.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-th
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-th.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-tl
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-tl.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-tr
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-tr.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-uk
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-uk.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-ur
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-ur.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-uz
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-uz.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-v21
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-v21.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-v27
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-v27.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-v29
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-v29.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-v31
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-v31.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-vi
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-vi.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-watch-v20
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-watch-v20.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-zh-rCN
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-zh-rCN.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-zh-rHK
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-zh-rHK.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-zh-rTW
+¦   ¦   ¦   ¦       ¦   ¦   ¦       values-zh-rTW.xml
+¦   ¦   ¦   ¦       ¦   ¦   ¦       
+¦   ¦   ¦   ¦       ¦   ¦   +---values-zu
+¦   ¦   ¦   ¦       ¦   ¦           values-zu.xml
+¦   ¦   ¦   ¦       ¦   ¦           
+¦   ¦   ¦   ¦       ¦   +---stripped.dir
+¦   ¦   ¦   ¦       +---packageDebugResources
+¦   ¦   ¦   ¦           ¦   compile-file-map.properties
+¦   ¦   ¦   ¦           ¦   merger.xml
+¦   ¦   ¦   ¦           ¦   
+¦   ¦   ¦   ¦           +---merged.dir
+¦   ¦   ¦   ¦           ¦   +---values
+¦   ¦   ¦   ¦           ¦           values.xml
+¦   ¦   ¦   ¦           ¦           
+¦   ¦   ¦   ¦           +---stripped.dir
+¦   ¦   ¦   +---javac
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---compileDebugJavaWithJavac
+¦   ¦   ¦   ¦           +---classes
+¦   ¦   ¦   ¦               +---com
+¦   ¦   ¦   ¦               ¦   +---pelipunto
+¦   ¦   ¦   ¦               ¦       +---app
+¦   ¦   ¦   ¦               ¦           ¦   BuildConfig.class
+¦   ¦   ¦   ¦               ¦           ¦   Hilt_MainActivity$1.class
+¦   ¦   ¦   ¦               ¦           ¦   Hilt_MainActivity.class
+¦   ¦   ¦   ¦               ¦           ¦   MainActivity_GeneratedInjector.class
+¦   ¦   ¦   ¦               ¦           ¦   PelipuntoApplication_GeneratedInjector.class
+¦   ¦   ¦   ¦               ¦           ¦   
+¦   ¦   ¦   ¦               ¦           +---di
+¦   ¦   ¦   ¦               ¦           ¦       MovieDetailModule_ProvideMovieDetailApiServiceFactory$InstanceHolder.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieDetailModule_ProvideMovieDetailApiServiceFactory.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieDetailModule_ProvideMovieDetailRepositoryFactory.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieDetailModule_ProvideMovieMapperFactory$InstanceHolder.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieDetailModule_ProvideMovieMapperFactory.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieModule_ProvideMovieApiServiceFactory$InstanceHolder.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieModule_ProvideMovieApiServiceFactory.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieModule_ProvideMovieMapperFactory$InstanceHolder.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieModule_ProvideMovieMapperFactory.class
+¦   ¦   ¦   ¦               ¦           ¦       MovieModule_ProvideMovieRepositoryFactory.class
+¦   ¦   ¦   ¦               ¦           ¦       
+¦   ¦   ¦   ¦               ¦           +---ui
+¦   ¦   ¦   ¦               ¦               +---detail
+¦   ¦   ¦   ¦               ¦               ¦       DetailViewModel_Factory.class
+¦   ¦   ¦   ¦               ¦               ¦       DetailViewModel_HiltModules$BindsModule.class
+¦   ¦   ¦   ¦               ¦               ¦       DetailViewModel_HiltModules$KeyModule.class
+¦   ¦   ¦   ¦               ¦               ¦       DetailViewModel_HiltModules.class
+¦   ¦   ¦   ¦               ¦               ¦       DetailViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder.class
+¦   ¦   ¦   ¦               ¦               ¦       DetailViewModel_HiltModules_KeyModule_ProvideFactory.class
+¦   ¦   ¦   ¦               ¦               ¦       
+¦   ¦   ¦   ¦               ¦               +---home
+¦   ¦   ¦   ¦               ¦                       HomeViewModel_Factory.class
+¦   ¦   ¦   ¦               ¦                       HomeViewModel_HiltModules$BindsModule.class
+¦   ¦   ¦   ¦               ¦                       HomeViewModel_HiltModules$KeyModule.class
+¦   ¦   ¦   ¦               ¦                       HomeViewModel_HiltModules.class
+¦   ¦   ¦   ¦               ¦                       HomeViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder.class
+¦   ¦   ¦   ¦               ¦                       HomeViewModel_HiltModules_KeyModule_ProvideFactory.class
+¦   ¦   ¦   ¦               ¦                       
+¦   ¦   ¦   ¦               +---dagger
+¦   ¦   ¦   ¦               ¦   +---hilt
+¦   ¦   ¦   ¦               ¦       +---internal
+¦   ¦   ¦   ¦               ¦           +---aggregatedroot
+¦   ¦   ¦   ¦               ¦               +---codegen
+¦   ¦   ¦   ¦               ¦                       _com_pelipunto_app_PelipuntoApplication.class
+¦   ¦   ¦   ¦               ¦                       
+¦   ¦   ¦   ¦               +---hilt_aggregated_deps
+¦   ¦   ¦   ¦                       _com_pelipunto_app_di_MovieDetailModule.class
+¦   ¦   ¦   ¦                       _com_pelipunto_app_di_MovieModule.class
+¦   ¦   ¦   ¦                       _com_pelipunto_app_MainActivity_GeneratedInjector.class
+¦   ¦   ¦   ¦                       _com_pelipunto_app_PelipuntoApplication_GeneratedInjector.class
+¦   ¦   ¦   ¦                       _com_pelipunto_app_ui_detail_DetailViewModel_HiltModules_BindsModule.class
+¦   ¦   ¦   ¦                       _com_pelipunto_app_ui_detail_DetailViewModel_HiltModules_KeyModule.class
+¦   ¦   ¦   ¦                       _com_pelipunto_app_ui_home_HomeViewModel_HiltModules_BindsModule.class
+¦   ¦   ¦   ¦                       _com_pelipunto_app_ui_home_HomeViewModel_HiltModules_KeyModule.class
+¦   ¦   ¦   ¦                       
+¦   ¦   ¦   +---local_only_symbol_list
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---parseDebugLocalResources
+¦   ¦   ¦   ¦               R-def.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---manifest_merge_blame_file
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugMainManifest
+¦   ¦   ¦   ¦               manifest-merger-blame-debug-report.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_manifest
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugMainManifest
+¦   ¦   ¦   ¦               AndroidManifest.xml
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_manifests
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugManifest
+¦   ¦   ¦   ¦               AndroidManifest.xml
+¦   ¦   ¦   ¦               output-metadata.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_res
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---mergeDebugResources
+¦   ¦   ¦   ¦               drawable_baseline_person_24.xml.flat
+¦   ¦   ¦   ¦               drawable_bg_image_movie.jpeg.flat
+¦   ¦   ¦   ¦               drawable_ic_launcher_background.xml.flat
+¦   ¦   ¦   ¦               drawable_ic_launcher_foreground.xml.flat
+¦   ¦   ¦   ¦               mipmap-anydpi-v26_ic_launcher.xml.flat
+¦   ¦   ¦   ¦               mipmap-anydpi-v26_ic_launcher_round.xml.flat
+¦   ¦   ¦   ¦               mipmap-hdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦               mipmap-hdpi_ic_launcher_foreground.webp.flat
+¦   ¦   ¦   ¦               mipmap-hdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦               mipmap-mdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦               mipmap-mdpi_ic_launcher_foreground.webp.flat
+¦   ¦   ¦   ¦               mipmap-mdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦               mipmap-xhdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦               mipmap-xhdpi_ic_launcher_foreground.webp.flat
+¦   ¦   ¦   ¦               mipmap-xhdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦               mipmap-xxhdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦               mipmap-xxhdpi_ic_launcher_foreground.webp.flat
+¦   ¦   ¦   ¦               mipmap-xxhdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦               mipmap-xxxhdpi_ic_launcher.webp.flat
+¦   ¦   ¦   ¦               mipmap-xxxhdpi_ic_launcher_foreground.webp.flat
+¦   ¦   ¦   ¦               mipmap-xxxhdpi_ic_launcher_round.webp.flat
+¦   ¦   ¦   ¦               values-af_values-af.arsc.flat
+¦   ¦   ¦   ¦               values-am_values-am.arsc.flat
+¦   ¦   ¦   ¦               values-ar_values-ar.arsc.flat
+¦   ¦   ¦   ¦               values-as_values-as.arsc.flat
+¦   ¦   ¦   ¦               values-az_values-az.arsc.flat
+¦   ¦   ¦   ¦               values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+¦   ¦   ¦   ¦               values-be_values-be.arsc.flat
+¦   ¦   ¦   ¦               values-bg_values-bg.arsc.flat
+¦   ¦   ¦   ¦               values-bn_values-bn.arsc.flat
+¦   ¦   ¦   ¦               values-bs_values-bs.arsc.flat
+¦   ¦   ¦   ¦               values-ca_values-ca.arsc.flat
+¦   ¦   ¦   ¦               values-cs_values-cs.arsc.flat
+¦   ¦   ¦   ¦               values-da_values-da.arsc.flat
+¦   ¦   ¦   ¦               values-de_values-de.arsc.flat
+¦   ¦   ¦   ¦               values-el_values-el.arsc.flat
+¦   ¦   ¦   ¦               values-en-rAU_values-en-rAU.arsc.flat
+¦   ¦   ¦   ¦               values-en-rCA_values-en-rCA.arsc.flat
+¦   ¦   ¦   ¦               values-en-rGB_values-en-rGB.arsc.flat
+¦   ¦   ¦   ¦               values-en-rIN_values-en-rIN.arsc.flat
+¦   ¦   ¦   ¦               values-en-rXC_values-en-rXC.arsc.flat
+¦   ¦   ¦   ¦               values-es-rUS_values-es-rUS.arsc.flat
+¦   ¦   ¦   ¦               values-es_values-es.arsc.flat
+¦   ¦   ¦   ¦               values-et_values-et.arsc.flat
+¦   ¦   ¦   ¦               values-eu_values-eu.arsc.flat
+¦   ¦   ¦   ¦               values-fa_values-fa.arsc.flat
+¦   ¦   ¦   ¦               values-fi_values-fi.arsc.flat
+¦   ¦   ¦   ¦               values-fr-rCA_values-fr-rCA.arsc.flat
+¦   ¦   ¦   ¦               values-fr_values-fr.arsc.flat
+¦   ¦   ¦   ¦               values-gl_values-gl.arsc.flat
+¦   ¦   ¦   ¦               values-gu_values-gu.arsc.flat
+¦   ¦   ¦   ¦               values-hi_values-hi.arsc.flat
+¦   ¦   ¦   ¦               values-hr_values-hr.arsc.flat
+¦   ¦   ¦   ¦               values-hu_values-hu.arsc.flat
+¦   ¦   ¦   ¦               values-hy_values-hy.arsc.flat
+¦   ¦   ¦   ¦               values-in_values-in.arsc.flat
+¦   ¦   ¦   ¦               values-is_values-is.arsc.flat
+¦   ¦   ¦   ¦               values-it_values-it.arsc.flat
+¦   ¦   ¦   ¦               values-iw_values-iw.arsc.flat
+¦   ¦   ¦   ¦               values-ja_values-ja.arsc.flat
+¦   ¦   ¦   ¦               values-ka_values-ka.arsc.flat
+¦   ¦   ¦   ¦               values-kk_values-kk.arsc.flat
+¦   ¦   ¦   ¦               values-km_values-km.arsc.flat
+¦   ¦   ¦   ¦               values-kn_values-kn.arsc.flat
+¦   ¦   ¦   ¦               values-ko_values-ko.arsc.flat
+¦   ¦   ¦   ¦               values-ky_values-ky.arsc.flat
+¦   ¦   ¦   ¦               values-lo_values-lo.arsc.flat
+¦   ¦   ¦   ¦               values-lt_values-lt.arsc.flat
+¦   ¦   ¦   ¦               values-lv_values-lv.arsc.flat
+¦   ¦   ¦   ¦               values-mk_values-mk.arsc.flat
+¦   ¦   ¦   ¦               values-ml_values-ml.arsc.flat
+¦   ¦   ¦   ¦               values-mn_values-mn.arsc.flat
+¦   ¦   ¦   ¦               values-mr_values-mr.arsc.flat
+¦   ¦   ¦   ¦               values-ms_values-ms.arsc.flat
+¦   ¦   ¦   ¦               values-my_values-my.arsc.flat
+¦   ¦   ¦   ¦               values-nb_values-nb.arsc.flat
+¦   ¦   ¦   ¦               values-ne_values-ne.arsc.flat
+¦   ¦   ¦   ¦               values-night-v8_values-night-v8.arsc.flat
+¦   ¦   ¦   ¦               values-nl_values-nl.arsc.flat
+¦   ¦   ¦   ¦               values-or_values-or.arsc.flat
+¦   ¦   ¦   ¦               values-pa_values-pa.arsc.flat
+¦   ¦   ¦   ¦               values-pl_values-pl.arsc.flat
+¦   ¦   ¦   ¦               values-pt-rBR_values-pt-rBR.arsc.flat
+¦   ¦   ¦   ¦               values-pt-rPT_values-pt-rPT.arsc.flat
+¦   ¦   ¦   ¦               values-pt_values-pt.arsc.flat
+¦   ¦   ¦   ¦               values-ro_values-ro.arsc.flat
+¦   ¦   ¦   ¦               values-ru_values-ru.arsc.flat
+¦   ¦   ¦   ¦               values-si_values-si.arsc.flat
+¦   ¦   ¦   ¦               values-sk_values-sk.arsc.flat
+¦   ¦   ¦   ¦               values-sl_values-sl.arsc.flat
+¦   ¦   ¦   ¦               values-sq_values-sq.arsc.flat
+¦   ¦   ¦   ¦               values-sr_values-sr.arsc.flat
+¦   ¦   ¦   ¦               values-sv_values-sv.arsc.flat
+¦   ¦   ¦   ¦               values-sw_values-sw.arsc.flat
+¦   ¦   ¦   ¦               values-ta_values-ta.arsc.flat
+¦   ¦   ¦   ¦               values-te_values-te.arsc.flat
+¦   ¦   ¦   ¦               values-th_values-th.arsc.flat
+¦   ¦   ¦   ¦               values-tl_values-tl.arsc.flat
+¦   ¦   ¦   ¦               values-tr_values-tr.arsc.flat
+¦   ¦   ¦   ¦               values-uk_values-uk.arsc.flat
+¦   ¦   ¦   ¦               values-ur_values-ur.arsc.flat
+¦   ¦   ¦   ¦               values-uz_values-uz.arsc.flat
+¦   ¦   ¦   ¦               values-v21_values-v21.arsc.flat
+¦   ¦   ¦   ¦               values-v27_values-v27.arsc.flat
+¦   ¦   ¦   ¦               values-v29_values-v29.arsc.flat
+¦   ¦   ¦   ¦               values-v31_values-v31.arsc.flat
+¦   ¦   ¦   ¦               values-vi_values-vi.arsc.flat
+¦   ¦   ¦   ¦               values-watch-v20_values-watch-v20.arsc.flat
+¦   ¦   ¦   ¦               values-zh-rCN_values-zh-rCN.arsc.flat
+¦   ¦   ¦   ¦               values-zh-rHK_values-zh-rHK.arsc.flat
+¦   ¦   ¦   ¦               values-zh-rTW_values-zh-rTW.arsc.flat
+¦   ¦   ¦   ¦               values-zu_values-zu.arsc.flat
+¦   ¦   ¦   ¦               values_values.arsc.flat
+¦   ¦   ¦   ¦               xml_backup_rules.xml.flat
+¦   ¦   ¦   ¦               xml_data_extraction_rules.xml.flat
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---merged_res_blame_folder
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---mergeDebugResources
+¦   ¦   ¦   ¦           +---out
+¦   ¦   ¦   ¦               +---multi-v2
+¦   ¦   ¦   ¦               ¦       mergeDebugResources.json
+¦   ¦   ¦   ¦               ¦       values-af.json
+¦   ¦   ¦   ¦               ¦       values-am.json
+¦   ¦   ¦   ¦               ¦       values-ar.json
+¦   ¦   ¦   ¦               ¦       values-as.json
+¦   ¦   ¦   ¦               ¦       values-az.json
+¦   ¦   ¦   ¦               ¦       values-b+sr+Latn.json
+¦   ¦   ¦   ¦               ¦       values-be.json
+¦   ¦   ¦   ¦               ¦       values-bg.json
+¦   ¦   ¦   ¦               ¦       values-bn.json
+¦   ¦   ¦   ¦               ¦       values-bs.json
+¦   ¦   ¦   ¦               ¦       values-ca.json
+¦   ¦   ¦   ¦               ¦       values-cs.json
+¦   ¦   ¦   ¦               ¦       values-da.json
+¦   ¦   ¦   ¦               ¦       values-de.json
+¦   ¦   ¦   ¦               ¦       values-el.json
+¦   ¦   ¦   ¦               ¦       values-en-rAU.json
+¦   ¦   ¦   ¦               ¦       values-en-rCA.json
+¦   ¦   ¦   ¦               ¦       values-en-rGB.json
+¦   ¦   ¦   ¦               ¦       values-en-rIN.json
+¦   ¦   ¦   ¦               ¦       values-en-rXC.json
+¦   ¦   ¦   ¦               ¦       values-es-rUS.json
+¦   ¦   ¦   ¦               ¦       values-es.json
+¦   ¦   ¦   ¦               ¦       values-et.json
+¦   ¦   ¦   ¦               ¦       values-eu.json
+¦   ¦   ¦   ¦               ¦       values-fa.json
+¦   ¦   ¦   ¦               ¦       values-fi.json
+¦   ¦   ¦   ¦               ¦       values-fr-rCA.json
+¦   ¦   ¦   ¦               ¦       values-fr.json
+¦   ¦   ¦   ¦               ¦       values-gl.json
+¦   ¦   ¦   ¦               ¦       values-gu.json
+¦   ¦   ¦   ¦               ¦       values-hi.json
+¦   ¦   ¦   ¦               ¦       values-hr.json
+¦   ¦   ¦   ¦               ¦       values-hu.json
+¦   ¦   ¦   ¦               ¦       values-hy.json
+¦   ¦   ¦   ¦               ¦       values-in.json
+¦   ¦   ¦   ¦               ¦       values-is.json
+¦   ¦   ¦   ¦               ¦       values-it.json
+¦   ¦   ¦   ¦               ¦       values-iw.json
+¦   ¦   ¦   ¦               ¦       values-ja.json
+¦   ¦   ¦   ¦               ¦       values-ka.json
+¦   ¦   ¦   ¦               ¦       values-kk.json
+¦   ¦   ¦   ¦               ¦       values-km.json
+¦   ¦   ¦   ¦               ¦       values-kn.json
+¦   ¦   ¦   ¦               ¦       values-ko.json
+¦   ¦   ¦   ¦               ¦       values-ky.json
+¦   ¦   ¦   ¦               ¦       values-lo.json
+¦   ¦   ¦   ¦               ¦       values-lt.json
+¦   ¦   ¦   ¦               ¦       values-lv.json
+¦   ¦   ¦   ¦               ¦       values-mk.json
+¦   ¦   ¦   ¦               ¦       values-ml.json
+¦   ¦   ¦   ¦               ¦       values-mn.json
+¦   ¦   ¦   ¦               ¦       values-mr.json
+¦   ¦   ¦   ¦               ¦       values-ms.json
+¦   ¦   ¦   ¦               ¦       values-my.json
+¦   ¦   ¦   ¦               ¦       values-nb.json
+¦   ¦   ¦   ¦               ¦       values-ne.json
+¦   ¦   ¦   ¦               ¦       values-night-v8.json
+¦   ¦   ¦   ¦               ¦       values-nl.json
+¦   ¦   ¦   ¦               ¦       values-or.json
+¦   ¦   ¦   ¦               ¦       values-pa.json
+¦   ¦   ¦   ¦               ¦       values-pl.json
+¦   ¦   ¦   ¦               ¦       values-pt-rBR.json
+¦   ¦   ¦   ¦               ¦       values-pt-rPT.json
+¦   ¦   ¦   ¦               ¦       values-pt.json
+¦   ¦   ¦   ¦               ¦       values-ro.json
+¦   ¦   ¦   ¦               ¦       values-ru.json
+¦   ¦   ¦   ¦               ¦       values-si.json
+¦   ¦   ¦   ¦               ¦       values-sk.json
+¦   ¦   ¦   ¦               ¦       values-sl.json
+¦   ¦   ¦   ¦               ¦       values-sq.json
+¦   ¦   ¦   ¦               ¦       values-sr.json
+¦   ¦   ¦   ¦               ¦       values-sv.json
+¦   ¦   ¦   ¦               ¦       values-sw.json
+¦   ¦   ¦   ¦               ¦       values-ta.json
+¦   ¦   ¦   ¦               ¦       values-te.json
+¦   ¦   ¦   ¦               ¦       values-th.json
+¦   ¦   ¦   ¦               ¦       values-tl.json
+¦   ¦   ¦   ¦               ¦       values-tr.json
+¦   ¦   ¦   ¦               ¦       values-uk.json
+¦   ¦   ¦   ¦               ¦       values-ur.json
+¦   ¦   ¦   ¦               ¦       values-uz.json
+¦   ¦   ¦   ¦               ¦       values-v21.json
+¦   ¦   ¦   ¦               ¦       values-v27.json
+¦   ¦   ¦   ¦               ¦       values-v29.json
+¦   ¦   ¦   ¦               ¦       values-v31.json
+¦   ¦   ¦   ¦               ¦       values-vi.json
+¦   ¦   ¦   ¦               ¦       values-watch-v20.json
+¦   ¦   ¦   ¦               ¦       values-zh-rCN.json
+¦   ¦   ¦   ¦               ¦       values-zh-rHK.json
+¦   ¦   ¦   ¦               ¦       values-zh-rTW.json
+¦   ¦   ¦   ¦               ¦       values-zu.json
+¦   ¦   ¦   ¦               ¦       values.json
+¦   ¦   ¦   ¦               ¦       
+¦   ¦   ¦   ¦               +---single
+¦   ¦   ¦   ¦                       mergeDebugResources.json
+¦   ¦   ¦   ¦                       
+¦   ¦   ¦   +---navigation_json
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---extractDeepLinksDebug
+¦   ¦   ¦   ¦               navigation.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---nested_resources_validation_report
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---generateDebugResources
+¦   ¦   ¦   ¦               nestedResourcesValidationReport.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---packaged_manifests
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugManifestForPackage
+¦   ¦   ¦   ¦               AndroidManifest.xml
+¦   ¦   ¦   ¦               output-metadata.json
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---packaged_res
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---packageDebugResources
+¦   ¦   ¦   ¦           +---drawable
+¦   ¦   ¦   ¦           ¦       baseline_person_24.xml
+¦   ¦   ¦   ¦           ¦       bg_image_movie.jpeg
+¦   ¦   ¦   ¦           ¦       ic_launcher_background.xml
+¦   ¦   ¦   ¦           ¦       ic_launcher_foreground.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-anydpi-v26
+¦   ¦   ¦   ¦           ¦       ic_launcher.xml
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-hdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_foreground.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-mdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_foreground.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-xhdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_foreground.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-xxhdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_foreground.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---mipmap-xxxhdpi-v4
+¦   ¦   ¦   ¦           ¦       ic_launcher.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_foreground.webp
+¦   ¦   ¦   ¦           ¦       ic_launcher_round.webp
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---values
+¦   ¦   ¦   ¦           ¦       values.xml
+¦   ¦   ¦   ¦           ¦       
+¦   ¦   ¦   ¦           +---xml
+¦   ¦   ¦   ¦                   backup_rules.xml
+¦   ¦   ¦   ¦                   data_extraction_rules.xml
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---processed_res
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugResources
+¦   ¦   ¦   ¦           +---out
+¦   ¦   ¦   ¦                   output-metadata.json
+¦   ¦   ¦   ¦                   resources-debug.ap_
+¦   ¦   ¦   ¦                   
+¦   ¦   ¦   +---runtime_symbol_list
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugResources
+¦   ¦   ¦   ¦               R.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---source_set_path_map
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---mapDebugSourceSetPaths
+¦   ¦   ¦   ¦               file-map.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---stable_resource_ids_file
+¦   ¦   ¦   ¦   +---debug
+¦   ¦   ¦   ¦       +---processDebugResources
+¦   ¦   ¦   ¦               stableIds.txt
+¦   ¦   ¦   ¦               
+¦   ¦   ¦   +---symbol_list_with_package_name
+¦   ¦   ¦       +---debug
+¦   ¦   ¦           +---processDebugResources
+¦   ¦   ¦                   package-aware-r.txt
+¦   ¦   ¦                   
+¦   ¦   +---kotlin
+¦   ¦   ¦   +---compileDebugKotlin
+¦   ¦   ¦   ¦   +---cacheable
+¦   ¦   ¦   ¦   ¦   ¦   last-build.bin
+¦   ¦   ¦   ¦   ¦   ¦   
+¦   ¦   ¦   ¦   ¦   +---caches-jvm
+¦   ¦   ¦   ¦   ¦       +---inputs
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.len
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.values
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab.values.s
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab_i
+¦   ¦   ¦   ¦   ¦       ¦       source-to-output.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦       
+¦   ¦   ¦   ¦   ¦       +---jvm
+¦   ¦   ¦   ¦   ¦       ¦   +---kotlin
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           class-attributes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           class-fq-name-to-source.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           constants.tab
+¦   ¦   ¦   ¦   ¦       ¦           constants.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           constants.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           constants.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           constants.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           constants.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           constants.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           internal-name-to-source.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           java-sources-proto-map.tab
+¦   ¦   ¦   ¦   ¦       ¦           java-sources-proto-map.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           java-sources-proto-map.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           java-sources-proto-map.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           java-sources-proto-map.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           java-sources-proto-map.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           java-sources-proto-map.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           package-parts.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.values
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab.values.s
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           proto.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           source-to-classes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           subtypes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.keystream
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.keystream.len
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.len
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab.values.at
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab_i
+¦   ¦   ¦   ¦   ¦       ¦           supertypes.tab_i.len
+¦   ¦   ¦   ¦   ¦       ¦           
+¦   ¦   ¦   ¦   ¦       +---lookups
+¦   ¦   ¦   ¦   ¦               counters.tab
+¦   ¦   ¦   ¦   ¦               file-to-id.tab
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.keystream
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.keystream.len
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.len
+¦   ¦   ¦   ¦   ¦               file-to-id.tab.values.at
+¦   ¦   ¦   ¦   ¦               file-to-id.tab_i
+¦   ¦   ¦   ¦   ¦               file-to-id.tab_i.len
+¦   ¦   ¦   ¦   ¦               id-to-file.tab
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.keystream
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.keystream.len
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.len
+¦   ¦   ¦   ¦   ¦               id-to-file.tab.values.at
+¦   ¦   ¦   ¦   ¦               id-to-file.tab_i
+¦   ¦   ¦   ¦   ¦               id-to-file.tab_i.len
+¦   ¦   ¦   ¦   ¦               lookups.tab
+¦   ¦   ¦   ¦   ¦               lookups.tab.keystream
+¦   ¦   ¦   ¦   ¦               lookups.tab.keystream.len
+¦   ¦   ¦   ¦   ¦               lookups.tab.len
+¦   ¦   ¦   ¦   ¦               lookups.tab.values
+¦   ¦   ¦   ¦   ¦               lookups.tab.values.at
+¦   ¦   ¦   ¦   ¦               lookups.tab.values.s
+¦   ¦   ¦   ¦   ¦               lookups.tab_i
+¦   ¦   ¦   ¦   ¦               lookups.tab_i.len
+¦   ¦   ¦   ¦   ¦               
+¦   ¦   ¦   ¦   +---classpath-snapshot
+¦   ¦   ¦   ¦   ¦       shrunk-classpath-snapshot.bin
+¦   ¦   ¦   ¦   ¦       
+¦   ¦   ¦   ¦   +---local-state
+¦   ¦   ¦   ¦           build-history.bin
+¦   ¦   ¦   ¦           
+¦   ¦   ¦   +---kspDebugKotlin
+¦   ¦   ¦       +---cacheable
+¦   ¦   ¦       +---classpath-snapshot
+¦   ¦   ¦       +---local-state
+¦   ¦   +---kspCaches
+¦   ¦   ¦   +---debug
+¦   ¦   ¦       ¦   ap-classpath-entries.bin
+¦   ¦   ¦       ¦   caches.uptodate
+¦   ¦   ¦       ¦   classpath-entries.bin
+¦   ¦   ¦       ¦   classpath-structure.bin
+¦   ¦   ¦       ¦   sourceToOutputs
+¦   ¦   ¦       ¦   sourceToOutputs.keystream
+¦   ¦   ¦       ¦   sourceToOutputs.keystream.len
+¦   ¦   ¦       ¦   sourceToOutputs.len
+¦   ¦   ¦       ¦   sourceToOutputs.values.at
+¦   ¦   ¦       ¦   sourceToOutputs_i
+¦   ¦   ¦       ¦   sourceToOutputs_i.len
+¦   ¦   ¦       ¦   symbols
+¦   ¦   ¦       ¦   symbols.keystream
+¦   ¦   ¦       ¦   symbols.keystream.len
+¦   ¦   ¦       ¦   symbols.len
+¦   ¦   ¦       ¦   symbols.values
+¦   ¦   ¦       ¦   symbols.values.at
+¦   ¦   ¦       ¦   symbols.values.s
+¦   ¦   ¦       ¦   symbols_i
+¦   ¦   ¦       ¦   symbols_i.len
+¦   ¦   ¦       ¦   
+¦   ¦   ¦       +---backups
+¦   ¦   ¦       ¦   +---java
+¦   ¦   ¦       ¦       +---byRounds
+¦   ¦   ¦       ¦           +---1
+¦   ¦   ¦       ¦           ¦   +---com
+¦   ¦   ¦       ¦           ¦   ¦   +---pelipunto
+¦   ¦   ¦       ¦           ¦   ¦       +---app
+¦   ¦   ¦       ¦           ¦   ¦           ¦   Hilt_MainActivity.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦   MainActivity_GeneratedInjector.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦   PelipuntoApplication_GeneratedInjector.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦   
+¦   ¦   ¦       ¦           ¦   ¦           +---di
+¦   ¦   ¦       ¦           ¦   ¦           ¦       MovieDetailModule_ProvideMovieDetailApiServiceFactory.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦       MovieDetailModule_ProvideMovieDetailRepositoryFactory.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦       MovieDetailModule_ProvideMovieMapperFactory.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦       MovieModule_ProvideMovieApiServiceFactory.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦       MovieModule_ProvideMovieMapperFactory.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦       MovieModule_ProvideMovieRepositoryFactory.java
+¦   ¦   ¦       ¦           ¦   ¦           ¦       
+¦   ¦   ¦       ¦           ¦   ¦           +---ui
+¦   ¦   ¦       ¦           ¦   ¦               +---detail
+¦   ¦   ¦       ¦           ¦   ¦               ¦       DetailViewModel_Factory.java
+¦   ¦   ¦       ¦           ¦   ¦               ¦       DetailViewModel_HiltModules.java
+¦   ¦   ¦       ¦           ¦   ¦               ¦       
+¦   ¦   ¦       ¦           ¦   ¦               +---home
+¦   ¦   ¦       ¦           ¦   ¦                       HomeViewModel_Factory.java
+¦   ¦   ¦       ¦           ¦   ¦                       HomeViewModel_HiltModules.java
+¦   ¦   ¦       ¦           ¦   ¦                       
+¦   ¦   ¦       ¦           ¦   +---dagger
+¦   ¦   ¦       ¦           ¦   ¦   +---hilt
+¦   ¦   ¦       ¦           ¦   ¦       +---internal
+¦   ¦   ¦       ¦           ¦   ¦           +---aggregatedroot
+¦   ¦   ¦       ¦           ¦   ¦               +---codegen
+¦   ¦   ¦       ¦           ¦   ¦                       _com_pelipunto_app_PelipuntoApplication.java
+¦   ¦   ¦       ¦           ¦   ¦                       
+¦   ¦   ¦       ¦           ¦   +---hilt_aggregated_deps
+¦   ¦   ¦       ¦           ¦           _com_pelipunto_app_di_MovieDetailModule.java
+¦   ¦   ¦       ¦           ¦           _com_pelipunto_app_di_MovieModule.java
+¦   ¦   ¦       ¦           ¦           
+¦   ¦   ¦       ¦           +---2
+¦   ¦   ¦       ¦               +---com
+¦   ¦   ¦       ¦               ¦   +---pelipunto
+¦   ¦   ¦       ¦               ¦       +---app
+¦   ¦   ¦       ¦               ¦           +---ui
+¦   ¦   ¦       ¦               ¦               +---detail
+¦   ¦   ¦       ¦               ¦               ¦       DetailViewModel_HiltModules_KeyModule_ProvideFactory.java
+¦   ¦   ¦       ¦               ¦               ¦       
+¦   ¦   ¦       ¦               ¦               +---home
+¦   ¦   ¦       ¦               ¦                       HomeViewModel_HiltModules_KeyModule_ProvideFactory.java
+¦   ¦   ¦       ¦               ¦                       
+¦   ¦   ¦       ¦               +---hilt_aggregated_deps
+¦   ¦   ¦       ¦                       _com_pelipunto_app_MainActivity_GeneratedInjector.java
+¦   ¦   ¦       ¦                       _com_pelipunto_app_PelipuntoApplication_GeneratedInjector.java
+¦   ¦   ¦       ¦                       _com_pelipunto_app_ui_detail_DetailViewModel_HiltModules_BindsModule.java
+¦   ¦   ¦       ¦                       _com_pelipunto_app_ui_detail_DetailViewModel_HiltModules_KeyModule.java
+¦   ¦   ¦       ¦                       _com_pelipunto_app_ui_home_HomeViewModel_HiltModules_BindsModule.java
+¦   ¦   ¦       ¦                       _com_pelipunto_app_ui_home_HomeViewModel_HiltModules_KeyModule.java
+¦   ¦   ¦       ¦                       
+¦   ¦   ¦       +---classLookups
+¦   ¦   ¦       ¦       counters.tab
+¦   ¦   ¦       ¦       file-to-id.tab
+¦   ¦   ¦       ¦       file-to-id.tab.keystream
+¦   ¦   ¦       ¦       file-to-id.tab.keystream.len
+¦   ¦   ¦       ¦       file-to-id.tab.len
+¦   ¦   ¦       ¦       file-to-id.tab.values.at
+¦   ¦   ¦       ¦       file-to-id.tab_i
+¦   ¦   ¦       ¦       file-to-id.tab_i.len
+¦   ¦   ¦       ¦       id-to-file.tab
+¦   ¦   ¦       ¦       id-to-file.tab.keystream
+¦   ¦   ¦       ¦       id-to-file.tab.keystream.len
+¦   ¦   ¦       ¦       id-to-file.tab.len
+¦   ¦   ¦       ¦       id-to-file.tab.values.at
+¦   ¦   ¦       ¦       id-to-file.tab_i
+¦   ¦   ¦       ¦       id-to-file.tab_i.len
+¦   ¦   ¦       ¦       lookups.tab
+¦   ¦   ¦       ¦       lookups.tab.keystream
+¦   ¦   ¦       ¦       lookups.tab.keystream.len
+¦   ¦   ¦       ¦       lookups.tab.len
+¦   ¦   ¦       ¦       lookups.tab.values.at
+¦   ¦   ¦       ¦       lookups.tab_i
+¦   ¦   ¦       ¦       lookups.tab_i.len
+¦   ¦   ¦       ¦       
+¦   ¦   ¦       +---logs
+¦   ¦   ¦       +---symbolLookups
+¦   ¦   ¦               counters.tab
+¦   ¦   ¦               file-to-id.tab
+¦   ¦   ¦               file-to-id.tab.keystream
+¦   ¦   ¦               file-to-id.tab.keystream.len
+¦   ¦   ¦               file-to-id.tab.len
+¦   ¦   ¦               file-to-id.tab.values.at
+¦   ¦   ¦               file-to-id.tab_i
+¦   ¦   ¦               file-to-id.tab_i.len
+¦   ¦   ¦               id-to-file.tab
+¦   ¦   ¦               id-to-file.tab.keystream
+¦   ¦   ¦               id-to-file.tab.keystream.len
+¦   ¦   ¦               id-to-file.tab.len
+¦   ¦   ¦               id-to-file.tab.values.at
+¦   ¦   ¦               id-to-file.tab_i
+¦   ¦   ¦               id-to-file.tab_i.len
+¦   ¦   ¦               lookups.tab
+¦   ¦   ¦               lookups.tab.keystream
+¦   ¦   ¦               lookups.tab.keystream.len
+¦   ¦   ¦               lookups.tab.len
+¦   ¦   ¦               lookups.tab.values.at
+¦   ¦   ¦               lookups.tab_i
+¦   ¦   ¦               lookups.tab_i.len
+¦   ¦   ¦               
+¦   ¦   +---outputs
+¦   ¦   ¦   +---logs
+¦   ¦   ¦           manifest-merger-debug-report.txt
+¦   ¦   ¦           
+¦   ¦   +---tmp
+¦   ¦       +---compileDebugJavaWithJavac
+¦   ¦       ¦       previous-compilation-data.bin
+¦   ¦       ¦       
+¦   ¦       +---kotlin-classes
+¦   ¦           +---debug
+¦   ¦               +---com
+¦   ¦               ¦   +---pelipunto
+¦   ¦               ¦       +---app
+¦   ¦               ¦           ¦   ComposableSingletons$MainActivityKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ComposableSingletons$MainActivityKt.class
+¦   ¦               ¦           ¦   MainActivity$App$1.class
+¦   ¦               ¦           ¦   MainActivity$App$2.class
+¦   ¦               ¦           ¦   MainActivity$onCreate$1$1.class
+¦   ¦               ¦           ¦   MainActivity$onCreate$1.class
+¦   ¦               ¦           ¦   MainActivity.class
+¦   ¦               ¦           ¦   MainActivityKt$Greeting$1.class
+¦   ¦               ¦           ¦   MainActivityKt$GreetingPreview$1.class
+¦   ¦               ¦           ¦   MainActivityKt.class
+¦   ¦               ¦           ¦   PelipuntoApplication.class
+¦   ¦               ¦           ¦   
+¦   ¦               ¦           +---common
+¦   ¦               ¦           ¦   +---data
+¦   ¦               ¦           ¦           ApiMapper.class
+¦   ¦               ¦           ¦           
+¦   ¦               ¦           +---di
+¦   ¦               ¦           ¦       MovieDetailModule$json$1.class
+¦   ¦               ¦           ¦       MovieDetailModule.class
+¦   ¦               ¦           ¦       MovieModule$json$1.class
+¦   ¦               ¦           ¦       MovieModule.class
+¦   ¦               ¦           ¦       
+¦   ¦               ¦           +---movie
+¦   ¦               ¦           ¦   +---data
+¦   ¦               ¦           ¦   ¦   +---mapper_impl
+¦   ¦               ¦           ¦   ¦   ¦       MovieApiMapperImpl.class
+¦   ¦               ¦           ¦   ¦   ¦       
+¦   ¦               ¦           ¦   ¦   +---remote
+¦   ¦               ¦           ¦   ¦   ¦   +---api
+¦   ¦               ¦           ¦   ¦   ¦   ¦       MovieApiService$DefaultImpls.class
+¦   ¦               ¦           ¦   ¦   ¦   ¦       MovieApiService.class
+¦   ¦               ¦           ¦   ¦   ¦   ¦       
+¦   ¦               ¦           ¦   ¦   ¦   +---models
+¦   ¦               ¦           ¦   ¦   ¦           MovieDto$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           MovieDto$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           MovieDto.class
+¦   ¦               ¦           ¦   ¦   ¦           Result$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           Result$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           Result.class
+¦   ¦               ¦           ¦   ¦   ¦           
+¦   ¦               ¦           ¦   ¦   +---repository_impl
+¦   ¦               ¦           ¦   ¦           MovieRepositoryImpl$fetchDiscoverMovie$1.class
+¦   ¦               ¦           ¦   ¦           MovieRepositoryImpl$fetchDiscoverMovie$2.class
+¦   ¦               ¦           ¦   ¦           MovieRepositoryImpl$fetchTrendingMovie$1.class
+¦   ¦               ¦           ¦   ¦           MovieRepositoryImpl$fetchTrendingMovie$2.class
+¦   ¦               ¦           ¦   ¦           MovieRepositoryImpl.class
+¦   ¦               ¦           ¦   ¦           
+¦   ¦               ¦           ¦   +---domain
+¦   ¦               ¦           ¦       +---models
+¦   ¦               ¦           ¦       ¦       Movie.class
+¦   ¦               ¦           ¦       ¦       
+¦   ¦               ¦           ¦       +---repository
+¦   ¦               ¦           ¦               MovieRepository.class
+¦   ¦               ¦           ¦               
+¦   ¦               ¦           +---movie_detail
+¦   ¦               ¦           ¦   +---data
+¦   ¦               ¦           ¦   ¦   +---mapper_impl
+¦   ¦               ¦           ¦   ¦   ¦       MovieDetailMapperImpl.class
+¦   ¦               ¦           ¦   ¦   ¦       
+¦   ¦               ¦           ¦   ¦   +---remote
+¦   ¦               ¦           ¦   ¦   ¦   +---api
+¦   ¦               ¦           ¦   ¦   ¦   ¦       MovieDetailApiService$DefaultImpls.class
+¦   ¦               ¦           ¦   ¦   ¦   ¦       MovieDetailApiService.class
+¦   ¦               ¦           ¦   ¦   ¦   ¦       MovieDetailApiServiceKt.class
+¦   ¦               ¦           ¦   ¦   ¦   ¦       
+¦   ¦               ¦           ¦   ¦   ¦   +---models
+¦   ¦               ¦           ¦   ¦   ¦           AuthorDetails$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           AuthorDetails$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           AuthorDetails.class
+¦   ¦               ¦           ¦   ¦   ¦           BelongsToCollection$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           BelongsToCollection$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           BelongsToCollection.class
+¦   ¦               ¦           ¦   ¦   ¦           CastDto$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           CastDto$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           CastDto.class
+¦   ¦               ¦           ¦   ¦   ¦           Credits$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           Credits$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           Credits.class
+¦   ¦               ¦           ¦   ¦   ¦           Crew$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           Crew$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           Crew.class
+¦   ¦               ¦           ¦   ¦   ¦           Genre$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           Genre$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           Genre.class
+¦   ¦               ¦           ¦   ¦   ¦           MovieDetailDto$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           MovieDetailDto$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           MovieDetailDto.class
+¦   ¦               ¦           ¦   ¦   ¦           ProductionCompany$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           ProductionCompany$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           ProductionCompany.class
+¦   ¦               ¦           ¦   ¦   ¦           ProductionCountry$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           ProductionCountry$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           ProductionCountry.class
+¦   ¦               ¦           ¦   ¦   ¦           Result$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           Result$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           Result.class
+¦   ¦               ¦           ¦   ¦   ¦           ReviewsDto$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           ReviewsDto$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           ReviewsDto.class
+¦   ¦               ¦           ¦   ¦   ¦           SpokenLanguage$$serializer.class
+¦   ¦               ¦           ¦   ¦   ¦           SpokenLanguage$Companion.class
+¦   ¦               ¦           ¦   ¦   ¦           SpokenLanguage.class
+¦   ¦               ¦           ¦   ¦   ¦           
+¦   ¦               ¦           ¦   ¦   +---repo_impl
+¦   ¦               ¦           ¦   ¦           MovieDetailRepositoryImpl$fetchMovie$1.class
+¦   ¦               ¦           ¦   ¦           MovieDetailRepositoryImpl$fetchMovie$2.class
+¦   ¦               ¦           ¦   ¦           MovieDetailRepositoryImpl$fetchMovieDetail$1.class
+¦   ¦               ¦           ¦   ¦           MovieDetailRepositoryImpl$fetchMovieDetail$2.class
+¦   ¦               ¦           ¦   ¦           MovieDetailRepositoryImpl.class
+¦   ¦               ¦           ¦   ¦           
+¦   ¦               ¦           ¦   +---domain
+¦   ¦               ¦           ¦       +---models
+¦   ¦               ¦           ¦       ¦       Cast.class
+¦   ¦               ¦           ¦       ¦       MovieDetail.class
+¦   ¦               ¦           ¦       ¦       Review.class
+¦   ¦               ¦           ¦       ¦       
+¦   ¦               ¦           ¦       +---repository
+¦   ¦               ¦           ¦               MovieDetailRepository.class
+¦   ¦               ¦           ¦               
+¦   ¦               ¦           +---ui
+¦   ¦               ¦           ¦   +---components
+¦   ¦               ¦           ¦   ¦       CollapsibleTextKt$CollapsibleText$1$1$1.class
+¦   ¦               ¦           ¦   ¦       CollapsibleTextKt$CollapsibleText$1$2$1.class
+¦   ¦               ¦           ¦   ¦       CollapsibleTextKt$CollapsibleText$2.class
+¦   ¦               ¦           ¦   ¦       CollapsibleTextKt.class
+¦   ¦               ¦           ¦   ¦       ComposableSingletons$LoadingViewKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ¦       ComposableSingletons$LoadingViewKt$lambda-2$1.class
+¦   ¦               ¦           ¦   ¦       ComposableSingletons$LoadingViewKt.class
+¦   ¦               ¦           ¦   ¦       LoadingViewKt$LoadingView$1.class
+¦   ¦               ¦           ¦   ¦       LoadingViewKt.class
+¦   ¦               ¦           ¦   ¦       
+¦   ¦               ¦           ¦   +---detail
+¦   ¦               ¦           ¦   ¦   ¦   ComposableSingletons$MovieDetailScreenKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   ComposableSingletons$MovieDetailScreenKt.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailState.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovie$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovie$1$2.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovie$1$3.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovie$1.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovieDetailById$1$2.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovieDetailById$1$3.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovieDetailById$1$4.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel$fetchMovieDetailById$1.class
+¦   ¦               ¦           ¦   ¦   ¦   DetailViewModel.class
+¦   ¦               ¦           ¦   ¦   ¦   MovieDetailScreenKt$MovieDetailScreen$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   MovieDetailScreenKt$MovieDetailScreen$1$2$1$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   MovieDetailScreenKt$MovieDetailScreen$1$2$1.class
+¦   ¦               ¦           ¦   ¦   ¦   MovieDetailScreenKt$MovieDetailScreen$1$2.class
+¦   ¦               ¦           ¦   ¦   ¦   MovieDetailScreenKt$MovieDetailScreen$2.class
+¦   ¦               ¦           ¦   ¦   ¦   MovieDetailScreenKt.class
+¦   ¦               ¦           ¦   ¦   ¦   
+¦   ¦               ¦           ¦   ¦   +---components
+¦   ¦               ¦           ¦   ¦           ActionIcon.class
+¦   ¦               ¦           ¦   ¦           ActorItemKt$ActorItem$1$1.class
+¦   ¦               ¦           ¦   ¦           ActorItemKt$ActorItem$2.class
+¦   ¦               ¦           ¦   ¦           ActorItemKt.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$DetailBodyContentKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$DetailBodyContentKt$lambda-2$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$DetailBodyContentKt.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$TopContentKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$TopContentKt$lambda-2$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$TopContentKt.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$ActionIconBtn$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$ActionIconBtn$2.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$3$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$4$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$4$2$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$4$invoke$$inlined$items$default$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$4$invoke$$inlined$items$default$2.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$4$invoke$$inlined$items$default$3.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$4$invoke$$inlined$items$default$4.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1$1$4.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$DetailBodyContent$2.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$1$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$2$1$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$2$1$invoke$$inlined$items$default$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$2$1$invoke$$inlined$items$default$2.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$2$1$invoke$$inlined$items$default$3.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$2$1$invoke$$inlined$items$default$4.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$2$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MoreLikeThis$3.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$MovieInfoItem$2.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$Review$2.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$Review$3$2$1.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$Review$3$3.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt$Review$4.class
+¦   ¦               ¦           ¦   ¦           DetailBodyContentKt.class
+¦   ¦               ¦           ¦   ¦           ReviewKt$ReviewItem$2.class
+¦   ¦               ¦           ¦   ¦           ReviewKt.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$DetailTopContent$1$1.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$DetailTopContent$2.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$MovieDetailComponent$1$1.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$MovieDetailComponent$1$2$1.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$MovieDetailComponent$1$2$2.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$MovieDetailComponent$2.class
+¦   ¦               ¦           ¦   ¦           TopContentKt.class
+¦   ¦               ¦           ¦   ¦           
+¦   ¦               ¦           ¦   +---home
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$2$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$2$2$1$1$1$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$2$2$1$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$2$2$1$1$2$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$2$2$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$2$2$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$2$2.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$3.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt$HomeScreen$pagerState$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeScreenKt.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeState.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchDiscoverMovie$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchDiscoverMovie$1$2.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchDiscoverMovie$1$3.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchDiscoverMovie$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchTrendingMovie$1$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchTrendingMovie$1$2.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchTrendingMovie$1$3.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel$fetchTrendingMovie$1.class
+¦   ¦               ¦           ¦   ¦   ¦   HomeViewModel.class
+¦   ¦               ¦           ¦   ¦   ¦   
+¦   ¦               ¦           ¦   ¦   +---components
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$1$1.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$2$invoke$$inlined$items$default$1.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$2$invoke$$inlined$items$default$2.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$2$invoke$$inlined$items$default$3.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$2$invoke$$inlined$items$default$4.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$2.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$3$1.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$4$invoke$$inlined$items$default$1.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$4$invoke$$inlined$items$default$2.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$4$invoke$$inlined$items$default$3.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$4$invoke$$inlined$items$default$4.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1$4.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1$1.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1$1.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$1.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt$BodyContent$2.class
+¦   ¦               ¦           ¦   ¦           BodyContentKt.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$BodyContentKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$BodyContentKt$lambda-2$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$BodyContentKt.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$MovieCardKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$MovieCardKt.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$MovieCoverImageKt$lambda-1$1.class
+¦   ¦               ¦           ¦   ¦           ComposableSingletons$MovieCoverImageKt.class
+¦   ¦               ¦           ¦   ¦           MovieCardKt$MovieCard$1.class
+¦   ¦               ¦           ¦   ¦           MovieCardKt$MovieCard$2.class
+¦   ¦               ¦           ¦   ¦           MovieCardKt$PrevMovieCard$1.class
+¦   ¦               ¦           ¦   ¦           MovieCardKt.class
+¦   ¦               ¦           ¦   ¦           MovieCoverImageKt$MovieCoverImage$1.class
+¦   ¦               ¦           ¦   ¦           MovieCoverImageKt$MovieCoverImage$2$1.class
+¦   ¦               ¦           ¦   ¦           MovieCoverImageKt$MovieCoverImage$3.class
+¦   ¦               ¦           ¦   ¦           MovieCoverImageKt.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$MovieDetail$1$1.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$MovieDetail$1$2.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$MovieDetail$2.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$PrevMovieDetail$1.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$TopContent$1.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$TopContent$2$1.class
+¦   ¦               ¦           ¦   ¦           TopContentKt$TopContent$3.class
+¦   ¦               ¦           ¦   ¦           TopContentKt.class
+¦   ¦               ¦           ¦   ¦           
+¦   ¦               ¦           ¦   +---navigation
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$2.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$3$1$1$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$3$1$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$3$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$3.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$4.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$5$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$5$2$1$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$5$2$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$5$2.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$5$3.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1$5.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$1.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt$MovieNavigationGraph$2.class
+¦   ¦               ¦           ¦   ¦       MovieNavigationGraphKt.class
+¦   ¦               ¦           ¦   ¦       Route$FilmScreen.class
+¦   ¦               ¦           ¦   ¦       Route$HomeScreen.class
+¦   ¦               ¦           ¦   ¦       Route.class
+¦   ¦               ¦           ¦   ¦       
+¦   ¦               ¦           ¦   +---theme
+¦   ¦               ¦           ¦           ColorFamily.class
+¦   ¦               ¦           ¦           ColorKt.class
+¦   ¦               ¦           ¦           ThemeKt$JetMovieTheme$1.class
+¦   ¦               ¦           ¦           ThemeKt.class
+¦   ¦               ¦           ¦           TypeKt.class
+¦   ¦               ¦           ¦           
+¦   ¦               ¦           +---utils
+¦   ¦               ¦                   ExtKt$collectAndHandle$2.class
+¦   ¦               ¦                   ExtKt$collectAndHandle$3.class
+¦   ¦               ¦                   ExtKt$collectAndHandle$4.class
+¦   ¦               ¦                   ExtKt.class
+¦   ¦               ¦                   GenreConstants.class
+¦   ¦               ¦                   K.class
+¦   ¦               ¦                   Response$Error.class
+¦   ¦               ¦                   Response$Loading.class
+¦   ¦               ¦                   Response$Success.class
+¦   ¦               ¦                   Response.class
+¦   ¦               ¦                   
+¦   ¦               +---META-INF
+¦   ¦                       app_debug.kotlin_module
+¦   ¦                       
+¦   +---src
+¦       +---androidTest
+¦       ¦   +---java
+¦       ¦       +---com
+¦       ¦           +---pelipunto
+¦       ¦               +---app
+¦       ¦                       ExampleInstrumentedTest.kt
+¦       ¦                       
+¦       +---main
+¦       ¦   ¦   AndroidManifest.xml
+¦       ¦   ¦   ic_launcher-playstore.png
+¦       ¦   ¦   
+¦       ¦   +---java
+¦       ¦   ¦   +---com
+¦       ¦   ¦       +---pelipunto
+¦       ¦   ¦           ¦   PelipuntoApplication.kt
+¦       ¦   ¦           ¦   
+¦       ¦   ¦           +---app
+¦       ¦   ¦               ¦   MainActivity.kt
+¦       ¦   ¦               ¦   
+¦       ¦   ¦               +---common
+¦       ¦   ¦               ¦   +---data
+¦       ¦   ¦               ¦           ApiMapper.kt
+¦       ¦   ¦               ¦           
+¦       ¦   ¦               +---di
+¦       ¦   ¦               ¦       MovieDetailModule.kt
+¦       ¦   ¦               ¦       MovieModule.kt
+¦       ¦   ¦               ¦       
+¦       ¦   ¦               +---movie
+¦       ¦   ¦               ¦   +---data
+¦       ¦   ¦               ¦   ¦   +---mapper_impl
+¦       ¦   ¦               ¦   ¦   ¦       MovieApiMapperImpl.kt
+¦       ¦   ¦               ¦   ¦   ¦       
+¦       ¦   ¦               ¦   ¦   +---remote
+¦       ¦   ¦               ¦   ¦   ¦   +---api
+¦       ¦   ¦               ¦   ¦   ¦   ¦       MovieApiService.kt
+¦       ¦   ¦               ¦   ¦   ¦   ¦       
+¦       ¦   ¦               ¦   ¦   ¦   +---models
+¦       ¦   ¦               ¦   ¦   ¦           MovieDto.kt
+¦       ¦   ¦               ¦   ¦   ¦           Result.kt
+¦       ¦   ¦               ¦   ¦   ¦           
+¦       ¦   ¦               ¦   ¦   +---repository_impl
+¦       ¦   ¦               ¦   ¦           MovieRepositoryImpl.kt
+¦       ¦   ¦               ¦   ¦           
+¦       ¦   ¦               ¦   +---domain
+¦       ¦   ¦               ¦       +---models
+¦       ¦   ¦               ¦       ¦       Movie.kt
+¦       ¦   ¦               ¦       ¦       
+¦       ¦   ¦               ¦       +---repository
+¦       ¦   ¦               ¦               MovieRepository.kt
+¦       ¦   ¦               ¦               
+¦       ¦   ¦               +---movie_detail
+¦       ¦   ¦               ¦   +---data
+¦       ¦   ¦               ¦   ¦   +---mapper_impl
+¦       ¦   ¦               ¦   ¦   ¦       MovieDetailMapperImpl.kt
+¦       ¦   ¦               ¦   ¦   ¦       
+¦       ¦   ¦               ¦   ¦   +---remote
+¦       ¦   ¦               ¦   ¦   ¦   +---api
+¦       ¦   ¦               ¦   ¦   ¦   ¦       MovieDetailApiService.kt
+¦       ¦   ¦               ¦   ¦   ¦   ¦       
+¦       ¦   ¦               ¦   ¦   ¦   +---models
+¦       ¦   ¦               ¦   ¦   ¦           AuthorDetails.kt
+¦       ¦   ¦               ¦   ¦   ¦           BelongsToCollection.kt
+¦       ¦   ¦               ¦   ¦   ¦           CastDto.kt
+¦       ¦   ¦               ¦   ¦   ¦           Credits.kt
+¦       ¦   ¦               ¦   ¦   ¦           Crew.kt
+¦       ¦   ¦               ¦   ¦   ¦           Genre.kt
+¦       ¦   ¦               ¦   ¦   ¦           MovieDetailDto.kt
+¦       ¦   ¦               ¦   ¦   ¦           ProductionCompany.kt
+¦       ¦   ¦               ¦   ¦   ¦           ProductionCountry.kt
+¦       ¦   ¦               ¦   ¦   ¦           Result.kt
+¦       ¦   ¦               ¦   ¦   ¦           ReviewsDto.kt
+¦       ¦   ¦               ¦   ¦   ¦           SpokenLanguage.kt
+¦       ¦   ¦               ¦   ¦   ¦           
+¦       ¦   ¦               ¦   ¦   +---repo_impl
+¦       ¦   ¦               ¦   ¦           MovieDetailRepositoryImpl.kt
+¦       ¦   ¦               ¦   ¦           
+¦       ¦   ¦               ¦   +---domain
+¦       ¦   ¦               ¦       +---models
+¦       ¦   ¦               ¦       ¦       MovieDetail.kt
+¦       ¦   ¦               ¦       ¦       
+¦       ¦   ¦               ¦       +---repository
+¦       ¦   ¦               ¦               MovieDetailRepository.kt
+¦       ¦   ¦               ¦               
+¦       ¦   ¦               +---ui
+¦       ¦   ¦               ¦   +---components
+¦       ¦   ¦               ¦   ¦       CollapsibleText.kt
+¦       ¦   ¦               ¦   ¦       LoadingView.kt
+¦       ¦   ¦               ¦   ¦       
+¦       ¦   ¦               ¦   +---detail
+¦       ¦   ¦               ¦   ¦   ¦   DetailViewModel.kt
+¦       ¦   ¦               ¦   ¦   ¦   MovieDetailScreen.kt
+¦       ¦   ¦               ¦   ¦   ¦   
+¦       ¦   ¦               ¦   ¦   +---components
+¦       ¦   ¦               ¦   ¦           ActorItem.kt
+¦       ¦   ¦               ¦   ¦           DetailBodyContent.kt
+¦       ¦   ¦               ¦   ¦           Review.kt
+¦       ¦   ¦               ¦   ¦           TopContent.kt
+¦       ¦   ¦               ¦   ¦           
+¦       ¦   ¦               ¦   +---home
+¦       ¦   ¦               ¦   ¦   ¦   HomeScreen.kt
+¦       ¦   ¦               ¦   ¦   ¦   HomeViewModel.kt
+¦       ¦   ¦               ¦   ¦   ¦   
+¦       ¦   ¦               ¦   ¦   +---components
+¦       ¦   ¦               ¦   ¦           BodyContent.kt
+¦       ¦   ¦               ¦   ¦           MovieCard.kt
+¦       ¦   ¦               ¦   ¦           MovieCoverImage.kt
+¦       ¦   ¦               ¦   ¦           TopContent.kt
+¦       ¦   ¦               ¦   ¦           
+¦       ¦   ¦               ¦   +---navigation
+¦       ¦   ¦               ¦   ¦       MovieNavigationGraph.kt
+¦       ¦   ¦               ¦   ¦       Route.kt
+¦       ¦   ¦               ¦   ¦       
+¦       ¦   ¦               ¦   +---theme
+¦       ¦   ¦               ¦           Color.kt
+¦       ¦   ¦               ¦           Theme.kt
+¦       ¦   ¦               ¦           Type.kt
+¦       ¦   ¦               ¦           
+¦       ¦   ¦               +---utils
+¦       ¦   ¦                       Ext.kt
+¦       ¦   ¦                       GenreConstants.kt
+¦       ¦   ¦                       K.kt
+¦       ¦   ¦                       Response.kt
+¦       ¦   ¦                       
+¦       ¦   +---res
+¦       ¦       +---drawable
+¦       ¦       ¦       baseline_person_24.xml
+¦       ¦       ¦       bg_image_movie.jpeg
+¦       ¦       ¦       ic_launcher_background.xml
+¦       ¦       ¦       ic_launcher_foreground.xml
+¦       ¦       ¦       
+¦       ¦       +---mipmap-anydpi-v26
+¦       ¦       ¦       ic_launcher.xml
+¦       ¦       ¦       ic_launcher_round.xml
+¦       ¦       ¦       
+¦       ¦       +---mipmap-hdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_foreground.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-mdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_foreground.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xhdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_foreground.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xxhdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_foreground.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---mipmap-xxxhdpi
+¦       ¦       ¦       ic_launcher.webp
+¦       ¦       ¦       ic_launcher_foreground.webp
+¦       ¦       ¦       ic_launcher_round.webp
+¦       ¦       ¦       
+¦       ¦       +---values
+¦       ¦       ¦       colors.xml
+¦       ¦       ¦       ic_launcher_background.xml
+¦       ¦       ¦       strings.xml
+¦       ¦       ¦       themes.xml
+¦       ¦       ¦       
+¦       ¦       +---xml
+¦       ¦               backup_rules.xml
+¦       ¦               data_extraction_rules.xml
+¦       ¦               
+¦       +---test
+¦           +---java
+¦               +---com
+¦                   +---pelipunto
+¦                       +---app
+¦                               ExampleUnitTest.kt
+¦                               
++---gradle
+¦   ¦   libs.versions.toml
+¦   ¦   
+¦   +---wrapper
+¦           gradle-wrapper.jar
+¦           gradle-wrapper.properties
+¦           
++---screenshots
+        v1.0_details_screen.png
+        v1.0_homescreen.png
+        

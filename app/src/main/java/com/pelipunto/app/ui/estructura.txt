@@ -1,0 +1,38 @@
+Listado de rutas de carpetas para el volumen Windows-SSD
+El número de serie del volumen es AC44-90AD
+C:.
+¦   estructura.txt
+¦   
++---components
+¦       CollapsibleText.kt
+¦       LoadingView.kt
+¦       
++---detail
+¦   ¦   DetailViewModel.kt
+¦   ¦   MovieDetailScreen.kt
+¦   ¦   
+¦   +---components
+¦           ActorItem.kt
+¦           DetailBodyContent.kt
+¦           Review.kt
+¦           TopContent.kt
+¦           
++---home
+¦   ¦   HomeScreen.kt
+¦   ¦   HomeViewModel.kt
+¦   ¦   
+¦   +---components
+¦           BodyContent.kt
+¦           MovieCard.kt
+¦           MovieCoverImage.kt
+¦           TopContent.kt
+¦           
++---navigation
+¦       MovieNavigationGraph.kt
+¦       Route.kt
+¦       
++---theme
+        Color.kt
+        Theme.kt
+        Type.kt
+        
