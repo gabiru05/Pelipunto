@@ -20,7 +20,7 @@ if (localPropertiesFile.exists()) {
 
 android {
     namespace = "com.pelipunto.app"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.pelipunto.app"
@@ -118,3 +118,5 @@ dependencies {
     // Firebase BOM para manejo de versiones
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
 }
+
+apply(plugin = "com.google.gms.google-services")
