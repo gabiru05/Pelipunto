@@ -6,6 +6,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.*
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.rememberSnackbarHostState
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,6 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.runtime.LaunchedEffect
+import kotlinx.coroutines.delay
 
 @Composable
 fun LoginScreen(
@@ -31,6 +36,7 @@ fun LoginScreen(
     var password by remember { mutableStateOf("") }
     var emailError by remember { mutableStateOf(false) }
     var passwordError by remember { mutableStateOf(false) }
+    val snackbarHostState = rememberSnackbarHostState()
 
     Surface(
         modifier = Modifier.fillMaxSize()
@@ -140,6 +146,14 @@ fun LoginScreen(
                     )
                 }
             }
+            SnackbarHost(hostState = snackbarHostState, modifier = Modifier.align(Alignment.BottomCenter))
+        }
+    }
+
+    LaunchedEffect(errorMessage) {
+        if (!errorMessage.isNullOrEmpty()) {
+            snackbarHostState.showSnackbar(errorMessage)
+            delay(3000)
         }
     }
 }
