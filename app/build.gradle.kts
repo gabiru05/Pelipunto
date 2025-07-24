@@ -20,7 +20,7 @@ if (localPropertiesFile.exists()) {
 
 android {
     namespace = "com.pelipunto.app"
-    compileSdk = 36
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.pelipunto.app"
