@@ -16,6 +16,10 @@ import com.pelipunto.app.ui.home.HomeScreen
 import com.pelipunto.app.ui.navigation.MovieNavigationGraph
 import com.pelipunto.app.ui.theme.JetMovieTheme
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.pelipunto.app.auth.AuthViewModel
+import com.pelipunto.app.ui.navigation.AuthNavigationGraph
+import androidx.compose.runtime.collectAsState
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -32,11 +36,27 @@ class MainActivity : ComponentActivity() {
     @Composable
     fun App() {
         val navController = rememberNavController()
-        Scaffold(modifier = Modifier.fillMaxSize()) {
-            MovieNavigationGraph(
-                navController = navController,
-                modifier = Modifier.padding(it)
-            )
+        val authViewModel: AuthViewModel = hiltViewModel()
+        val authState by authViewModel.authState.collectAsState()
+        val isAuthenticated = authState.user != null
+
+        if (isAuthenticated) {
+            Scaffold(modifier = Modifier.fillMaxSize()) {
+                MovieNavigationGraph(
+                    navController = navController,
+                    modifier = Modifier.padding(it)
+                )
+            }
+        } else {
+            Scaffold(modifier = Modifier.fillMaxSize()) {
+                AuthNavigationGraph(
+                    navController = navController,
+                    modifier = Modifier.padding(it),
+                    onAuthSuccess = {
+                        // Al autenticarse, se reconstruye el Composable y se muestra MovieNavigationGraph
+                    }
+                )
+            }
         }
     }
 }
