@@ -5,3 +5,10 @@ plugins {
     alias(libs.plugins.hilt.android.gradle) apply false
     alias(libs.plugins.ksp) apply false
 }
+
+buildscript {
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.1")
+    }
+}
+

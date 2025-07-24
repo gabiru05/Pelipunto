@@ -12,4 +12,5 @@ sealed class Route {
             return "$route/$id"
         }
     }
+    data class SettingsScreen(val route: String = "settingsScreen") : Route()
 }

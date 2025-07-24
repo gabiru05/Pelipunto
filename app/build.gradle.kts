@@ -27,7 +27,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -82,6 +82,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation("androidx.compose.material3:material3:1.1.2") // O la última versión estable que uses
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -110,4 +111,13 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.compose)
     //splash
     implementation(libs.androidx.core.splashscreen)
+
+    // Firebase Auth
+    implementation("com.google.firebase:firebase-auth:22.3.0")
+    // Google Sign-In para autenticación con Google
+    implementation("com.google.android.gms:play-services-auth:21.1.0")
+    // Firebase BOM para manejo de versiones
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
 }
+
+apply(plugin = "com.google.gms.google-services")
