@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
     fun App() {
         val navController = rememberNavController()
         val authViewModel: AuthViewModel = hiltViewModel()
-        val authState by authViewModel.authState.collectAsState()
+        val authState = authViewModel.authState.collectAsState().value
         val isAuthenticated = authState.user != null
 
         if (isAuthenticated) {

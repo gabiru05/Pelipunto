@@ -14,6 +14,7 @@ import com.pelipunto.app.auth.LoginScreen
 import com.pelipunto.app.auth.RegisterScreen
 import com.pelipunto.app.ui.welcome.WelcomeScreen
 import com.pelipunto.app.auth.AuthResult
+import androidx.compose.runtime.collectAsState
 
 @Composable
 fun AuthNavigationGraph(
@@ -37,7 +38,9 @@ fun AuthNavigationGraph(
         composable("authOptions") {
             AuthOptionsScreen(
                 onLoginClick = { navController.navigate("login") },
-                onRegisterClick = { navController.navigate("register") }
+                onRegisterClick = { navController.navigate("register") },
+                isLoggedIn = state.user != null,
+                onLogout = { viewModel.logout() }
             )
         }
         composable("login") {
