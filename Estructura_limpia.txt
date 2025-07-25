@@ -1,0 +1,52 @@
+.
+├── app
+│   ├── build.gradle.kts
+│   ├── proguard-rules.pro
+│   └── src
+│       └── main
+│           ├── AndroidManifest.xml
+│           └── java
+│               └── com
+│                   └── pelipunto
+│                       ├── app
+│                       │   ├── MainActivity.kt
+│                       │   ├── PelipuntoApplication.kt
+│                       │   ├── auth
+│                       │   │   ├── AuthOptionsScreen.kt
+│                       │   │   ├── AuthViewModel.kt
+│                       │   │   ├── LoginScreen.kt
+│                       │   │   └── RegisterScreen.kt
+│                       │   ├── di
+│                       │   │   ├── MovieDetailModule.kt
+│                       │   │   └── MovieModule.kt
+│                       │   ├── ui
+│                       │   │   ├── components
+│                       │   │   │   ├── CollapsibleText.kt
+│                       │   │   │   └── LoadingView.kt
+│                       │   │   ├── detail
+│                       │   │   │   ├── DetailViewModel.kt
+│                       │   │   │   └── MovieDetailScreen.kt
+│                       │   │   ├── home
+│                       │   │   │   ├── HomeScreen.kt
+│                       │   │   │   └── HomeViewModel.kt
+│                       │   │   ├── navigation
+│                       │   │   │   ├── AuthNavigationGraph.kt
+│                       │   │   │   ├── MovieNavigationGraph.kt
+│                       │   │   │   └── Route.kt
+│                       │   │   ├── settings
+│                       │   │   │   └── SettingsScreen.kt
+│                       │   │   ├── theme
+│                       │   │   │   ├── Color.kt
+│                       │   │   │   ├── Theme.kt
+│                       │   │   │   └── Type.kt
+│                       │   │   └── welcome
+│                       │   │       └── WelcomeScreen.kt
+│                       │   └── utils
+│                       │       ├── K.kt
+│                       │       └── Response.kt
+│                       └── (resto de tus módulos de datos y dominio)
+├── build.gradle.kts
+├── gradle.properties
+├── libs.versions.toml
+├── Readme.md
+└── settings.gradle.kts
