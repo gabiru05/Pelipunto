@@ -10,11 +10,7 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.graphics.Color
 import androidx.compose.material3.MaterialTheme
-import com.pelipunto.app.ui.theme.surfaceContainerLight
-import com.pelipunto.app.ui.theme.secondaryContainerLight
-import com.pelipunto.app.ui.theme.outlineLight
 
 @Composable
 fun GlassmorphicCard(
@@ -22,10 +18,10 @@ fun GlassmorphicCard(
     content: @Composable () -> Unit
 ) {
     val gradientColors = listOf(
-        surfaceContainerLight.copy(alpha = 0.85f),
-        secondaryContainerLight.copy(alpha = 0.80f)
+        MaterialTheme.colorScheme.surfaceBright.copy(alpha = 0.92f),
+        MaterialTheme.colorScheme.surface.copy(alpha = 0.85f)
     )
-    val shadowColor = outlineLight.copy(alpha = 0.25f)
+    val shadowColor = MaterialTheme.colorScheme.outline.copy(alpha = 0.18f)
 
     Box(
         modifier = modifier
