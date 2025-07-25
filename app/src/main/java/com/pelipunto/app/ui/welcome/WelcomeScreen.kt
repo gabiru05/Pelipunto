@@ -13,14 +13,24 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
 import com.pelipunto.app.R
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 
 @Composable
 fun WelcomeScreen(onContinue: () -> Unit) {
+    var hasNavigated by remember { mutableStateOf(false) }
     Surface(
         modifier = Modifier
             .fillMaxSize()
-            .clickable { onContinue() },
-        color = Color.Black
+            .clickable {
+                if (!hasNavigated) {
+                    hasNavigated = true
+                    onContinue()
+                }
+            },
+        color = Color(8, 8, 8) // Fondo rgb(8,8,8)
     ) {
         Box(
             modifier = Modifier.fillMaxSize(),
@@ -34,14 +44,19 @@ fun WelcomeScreen(onContinue: () -> Unit) {
                         val videoUri = Uri.parse("android.resource://${ctx.packageName}/${R.raw.intro_video}")
                         setVideoURI(videoUri)
                         setOnPreparedListener { mp ->
-                            mp.isLooping = true
+                            mp.isLooping = false // Solo reproducir una vez
                         }
-                        setOnCompletionListener { start() }
+                        setOnCompletionListener {
+                            if (!hasNavigated) {
+                                hasNavigated = true
+                                onContinue()
+                            }
+                        }
                         start()
                     }
                 },
                 update = { videoView ->
-                    if (!videoView.isPlaying) {
+                    if (!videoView.isPlaying && !hasNavigated) {
                         videoView.start()
                     }
                 }
