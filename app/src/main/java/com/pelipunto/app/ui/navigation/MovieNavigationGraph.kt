@@ -11,6 +11,7 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -109,11 +110,14 @@ fun MovieNavigationGraph(
             composable(route = Screen.Settings.route) {
                 val authViewModel: AuthViewModel = hiltViewModel()
                 val context = LocalContext.current
+                val user = authViewModel.authState.collectAsState().value.user
                 SettingsScreen(
                     modifier = Modifier.padding(innerPadding),
                     onLogoutClicked = {
                         authViewModel.logout(context)
-                    }
+                    },
+                    userName = user?.displayName ?: user?.email?.substringBefore("@") ?: "",
+                    userEmail = user?.email ?: ""
                 )
             }
 
