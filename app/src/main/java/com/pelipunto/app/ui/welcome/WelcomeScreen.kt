@@ -1,51 +1,67 @@
 package com.pelipunto.app.ui.welcome
 
-import androidx.compose.foundation.Image
+import android.net.Uri
+import android.widget.VideoView
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
-import androidx.compose.material3.MaterialTheme
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.viewinterop.AndroidView
 import com.pelipunto.app.R
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 
 @Composable
 fun WelcomeScreen(onContinue: () -> Unit) {
+    var hasNavigated by remember { mutableStateOf(false) }
     Surface(
         modifier = Modifier
             .fillMaxSize()
-            .clickable { onContinue() }
+            .clickable {
+                if (!hasNavigated) {
+                    hasNavigated = true
+                    onContinue()
+                }
+            },
+        color = Color(8, 8, 8) // Fondo rgb(8,8,8)
     ) {
-        Column(
+        Box(
             modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
+            contentAlignment = Alignment.Center
         ) {
-            // Logo o imagen de bienvenida
-            // Si tienes un logo, descomenta la siguiente línea y asegúrate de tener el recurso en res/drawable o mipmap
-            // Image(painter = painterResource(id = R.drawable.ic_launcher_foreground), contentDescription = "Logo", modifier = Modifier.size(120.dp))
-            Spacer(modifier = Modifier.height(32.dp))
-            Text(
-                text = "Bienvenido a Pelipunto",
-                style = MaterialTheme.typography.headlineMedium
-            )
-            Spacer(modifier = Modifier.height(16.dp))
-            Text(
-                text = "Toca en cualquier parte para continuar",
-                style = MaterialTheme.typography.bodyMedium
+            val context = LocalContext.current
+            AndroidView(
+                modifier = Modifier.fillMaxSize(),
+                factory = { ctx ->
+                    VideoView(ctx).apply {
+                        val videoUri = Uri.parse("android.resource://${ctx.packageName}/${R.raw.intro_video}")
+                        setVideoURI(videoUri)
+                        setOnPreparedListener { mp ->
+                            mp.isLooping = false // Solo reproducir una vez
+                        }
+                        setOnCompletionListener {
+                            if (!hasNavigated) {
+                                hasNavigated = true
+                                onContinue()
+                            }
+                        }
+                        start()
+                    }
+                },
+                update = { videoView ->
+                    if (!videoView.isPlaying && !hasNavigated) {
+                        videoView.start()
+                    }
+                }
             )
         }
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun WelcomeScreenPreview() {
-    WelcomeScreen(onContinue = {})
 }
 

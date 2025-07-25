@@ -25,7 +25,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.2"
+        versionName = "1.5"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -103,7 +103,8 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:21.1.0")
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
     implementation("com.google.accompanist:accompanist-pager-indicators:0.34.0")
-
+    implementation("androidx.media3:media3-exoplayer:1.3.1")
+    implementation("androidx.media3:media3-ui:1.3.1")
 }
 
 apply(plugin = "com.google.gms.google-services")
