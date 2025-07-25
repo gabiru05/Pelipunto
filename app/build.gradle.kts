@@ -102,6 +102,8 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.android.gms:play-services-auth:21.1.0")
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.34.0")
+
 }
 
 apply(plugin = "com.google.gms.google-services")

@@ -30,8 +30,6 @@ fun ActorItem(
     modifier: Modifier = Modifier,
     cast: Cast
 ) {
-    // Tu lógica para cargar la imagen es excelente y se mantiene.
-    // Utiliza 'cast.profilePath' de nuestra nueva data class.
     val imgRequest = ImageRequest.Builder(LocalContext.current)
         .data("${K.BASE_IMAGE_URL}${cast.profilePath}")
         .crossfade(true)
@@ -44,7 +42,7 @@ fun ActorItem(
     ) {
         AsyncImage(
             model = imgRequest,
-            contentDescription = "Foto de ${cast.name}", // Descripción de accesibilidad mejorada
+            contentDescription = "Foto de ${cast.name}",
             modifier = Modifier
                 .size(48.dp)
                 .clip(CircleShape),
@@ -55,13 +53,8 @@ fun ActorItem(
             placeholder = painterResource(id = R.drawable.baseline_person_24)
         )
 
-        Spacer(modifier = Modifier.height(8.dp)) // Un poco más de espacio
+        Spacer(modifier = Modifier.height(8.dp))
 
-        // ==========================================================
-        // AQUÍ ESTÁN LOS CAMBIOS PRINCIPALES
-        // ==========================================================
-
-        // 1. Reemplazamos firstName y lastName por la propiedad 'name'
         Text(
             text = cast.name, // Usamos el nombre completo del actor
             style = MaterialTheme.typography.bodyMedium,
@@ -71,11 +64,11 @@ fun ActorItem(
             textAlign = TextAlign.Center
         )
 
-        // 2. Reemplazamos genderRole por la propiedad 'character', que es más útil
+
         Text(
-            text = cast.character, // Usamos el nombre del personaje
+            text = cast.character,
             style = MaterialTheme.typography.bodySmall,
-            maxLines = 2, // Permitimos hasta 2 líneas para personajes largos
+            maxLines = 2,
             overflow = TextOverflow.Ellipsis,
             textAlign = TextAlign.Center
         )

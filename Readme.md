@@ -5,30 +5,49 @@
 
 <h4 align="center">
   Aplicación Android nativa para explorar, descubrir y gestionar películas.<br>
-  Construida con Arquitectura Limpia Multi-módulo, Kotlin, y Jetpack Compose.
+  Construida con Arquitectura Limpia Multi-módulo, Kotlin, y un moderno UI/UX con Jetpack Compose.
 </h4>
 
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="línea horizontal RGB arcoíris súper delgada">
 
-#### <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/accepted.gif" width= "30" alt="Icono verde de validación"> Proyecto de aprendizaje y demostración de arquitectura Android moderna.
+#### <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/accepted.gif" width= "30" alt="Icono verde de validación"> Proyecto de aprendizaje y demostración de arquitectura y UI/UX Android moderna.
 
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="línea horizontal RGB arcoíris súper delgada">
 
-<h2 align="center">Descripción del Proyecto</h2>
+<h2 align="center">Recorrido de la Aplicación</h2>
 
 <p align="center">
-  <strong>Pelipunto</strong> es una aplicación Android que permite a los usuarios explorar las películas más populares y las que son tendencia, utilizando la API de <a href="https://www.themoviedb.org/">The Movie Database (TMDb)</a>. El proyecto nació como una refactorización y modernización de una base de código existente, con el objetivo de implementar las mejores prácticas de desarrollo de software, incluyendo <strong>Arquitectura Limpia</strong>, un diseño <strong>multi-módulo</strong>, e inyección de dependencias con <strong>Hilt</strong>. La interfaz de usuario está desarrollada íntegramente con <strong>Jetpack Compose</strong> y Material 3, ofreciendo una experiencia moderna y reactiva.
+  Un tour visual a través de las principales pantallas de la aplicación, mostrando el flujo de usuario completo desde la bienvenida hasta la gestión de la cuenta.
 </p>
 
-<p align="center">
-  <img src="./screenshots/screenshot_login.png" width="250" alt="Captura de pantalla del Login">
-  <img src="./screenshots/screenshot_home.png" width="250" alt="Captura de pantalla principal de Pelipunto">
-  <img src="./screenshots/screenshot_settings.png" width="250" alt="Captura de pantalla de ajustes">
-</p>
+| Pantalla de Bienvenida y Autenticación | Pantallas Principales de Contenido |
+| :------------------------------------: | :--------------------------------: |
+| <img src="./screenshots/01_welcome.png" width="250" alt="Pantalla de Bienvenida"> | <img src="./screenshots/04_home.png" width="250" alt="Pantalla Principal"> |
+| **Bienvenida y Elección.** El usuario es recibido y puede optar por iniciar sesión o registrarse. | **Pantalla Principal.** Un `Scaffold` con `BottomBar` presenta un carrusel interactivo y las tendencias. |
+| <img src="./screenshots/03_login.png" width="250" alt="Pantalla de Login"> | <img src="./screenshots/05_detail.png" width="250" alt="Pantalla de Detalles"> |
+| **Inicio de Sesión.** Interfaz limpia para autenticación con Firebase (Google o Email). | **Detalles de Película.** Diseño inmersivo que ocupa toda la pantalla para una experiencia sin distracciones. |
 
-<h3 align="center">Creado/Adaptado por:</h3>
+| Pantallas Secundarias y de Gestión |
+| :----------------------------------: |
+| <img src="./screenshots/06_cast_list.png" width="250" alt="Pantalla de Elenco"> |
+| **Lista de Elenco.** Muestra todos los actores principales de la película seleccionada. |
+| <img src="./screenshots/07_reviews_list.png" width="250" alt="Pantalla de Reseñas"> |
+| **Lista de Reseñas.** Permite al usuario leer todas las reseñas disponibles. |
+| <img src="./screenshots/08_settings.png" width="250" alt="Pantalla de Ajustes"> |
+| **Ajustes y Cierre de Sesión.** El usuario puede gestionar su cuenta y cerrar sesión de forma segura. |
+
+<h3 align="center">Creado y Adaptado por:</h3>
 <p align="center">
-  <a href="https://github.com/gabiru05">Gabriel Ruiz (gabiru05)</a>
+  <a href="https://github.com/gabiru05" title="Gabriel Ruiz">
+    <img src="https://github.com/gabiru05.png" width="60" height="60" style="border-radius:50%">
+  </a>
+     
+  <a href="https://github.com/MrT4ttoo" title="Adolfo López">
+    <img src="https://github.com/MrT4ttoo.png" width="60" height="60" style="border-radius:50%">
+  </a>
+</p>
+<p align="center">
+  Gabriel Ruiz        Adolfo López
 </p>
 
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="línea horizontal RGB arcoíris súper delgada">
@@ -36,11 +55,12 @@
 <h2 align="center">Características Principales</h2>
 
 <ul>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Rediseño de UI/UX con Material Design 3:</strong> Interfaz completamente renovada, con bordes definidos, espaciado consistente y una estética moderna y limpia.</li>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Navegación Centralizada con Scaffold:</strong> Arquitectura de UI robusta con un único `Scaffold` que gestiona de forma inteligente la `TopAppBar` y `BottomAppBar`.</li>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Carrusel Interactivo Mejorado:</strong> El carrusel de la pantalla principal ahora cuenta con animaciones de `HorizontalPager` y efectos visuales que mejoran la experiencia de descubrimiento.</li>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Listas Completas para Elenco y Reseñas:</strong> Pantallas dedicadas para explorar en profundidad la información de cada película.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Sistema de Autenticación Completo:</strong> Inicio de sesión con Google y mediante correo/contraseña utilizando Firebase Authentication.</li>
-  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Arquitectura Limpia Multi-módulo:</strong> El código está separado por capas (presentación, dominio, datos) y funcionalidades (discover, trending, detail), facilitando el mantenimiento y la escalabilidad.</li>
-  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Descubrimiento de Películas:</strong> Pantalla principal con un carrusel interactivo que muestra las películas populares del momento.</li>
-  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Detalles Completos:</strong> Al seleccionar una película, se accede a una pantalla de detalles con sinopsis, póster, y más información.</li>
-  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Solución de Bug de Logout:</strong> Corregido el flujo de cierre de sesión para asegurar que se pueda reingresar seleccionando una cuenta de Google sin que la app se congele.</li>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Arquitectura Limpia Multi-módulo:</strong> El código está separado por capas (presentación, dominio, datos) y funcionalidades, facilitando el mantenimiento y la escalabilidad.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Interfaz 100% Compose:</strong> UI completamente construida con Jetpack Compose y Material 3.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Asincronía con Coroutines:</strong> Todas las operaciones de red y base de datos se manejan de forma eficiente con Coroutines y Flow.</li>
 </ul>
@@ -51,26 +71,6 @@
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/PencilWrite.png" width="20" alt="icono de planeado"> Desarrollar la funcionalidad de <strong>calificar películas</strong> y guardar la puntuación por usuario.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/PencilWrite.png" width="20" alt="icono de planeado"> Crear una lista de "Favoritos" o "Películas para ver".</li>
 </ul>
-
-<img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="línea horizontal RGB arcoíris súper delgada">
-
-<h2 align="center">Estructura del Proyecto</h2>
-
-<p align="center">
-  El proyecto sigue una arquitectura limpia y está dividido en módulos por funcionalidad y por capa.
-</p>
-
--   `app/`: Módulo principal que une toda la aplicación y contiene la `MainActivity` y la clase `Application`.
--   `core/`: Módulo con código compartido por toda la app.
-    -   `core/common`: Constantes y clases de utilidad.
-    -   `core/database`: Configuración de Room (Base de datos).
-    -   `core/network`: Configuración de Retrofit y OkHttp.
-    -   `core/ui`: Componentes de Jetpack Compose reutilizables.
--   `discover/`: Módulo de la funcionalidad "Descubrir".
-    -   `discover/data`: Implementación del repositorio y fuentes de datos.
-    -   `discover/domain`: Casos de uso y modelos de dominio.
-    -   `discover/ui`: Pantallas y ViewModels de la funcionalidad.
--   `movie/` y `trending/`: Módulos similares para sus respectivas funcionalidades.
 
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="línea horizontal RGB arcoíris súper delgada">
 

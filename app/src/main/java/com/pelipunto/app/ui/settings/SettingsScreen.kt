@@ -13,10 +13,11 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun SettingsScreen(
+    modifier: Modifier = Modifier,
     onLogoutClicked: () -> Unit
 ) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .padding(32.dp),
         contentAlignment = Alignment.Center

@@ -10,19 +10,19 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.pelipunto.app.ui.home.itemSpacing
+import com.pelipunto.app.ui.theme.itemSpacing
 
 @Composable
 fun MovieCard(
     modifier: Modifier = Modifier,
-    shapes: CornerBasedShape = MaterialTheme.shapes.large,
-    bgColor: Color = Color.Black.copy(.8f),
+    shape: CornerBasedShape = MaterialTheme.shapes.large,
+    containerColor: Color = Color.Black.copy(.8f),
     content: @Composable () -> Unit
 ) {
     Card(
-        shape = shapes,
+        shape = shape,
         colors = CardDefaults.cardColors(
-            containerColor = bgColor,
+            containerColor = containerColor,
             contentColor = Color.White
         ),
         modifier = modifier
@@ -30,7 +30,6 @@ fun MovieCard(
         content()
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
