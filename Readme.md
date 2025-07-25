@@ -4,7 +4,7 @@
 <a name="readme-top"></a>
 
 <h4 align="center">
-  Aplicación Android nativa para explorar, descubrir y calificar películas.<br>
+  Aplicación Android nativa para explorar, descubrir y gestionar películas.<br>
   Construida con Arquitectura Limpia Multi-módulo, Kotlin, y Jetpack Compose.
 </h4>
 
@@ -21,34 +21,35 @@
 </p>
 
 <p align="center">
-  <img src="./screenshots/v1.0_homescreen.png" width="250" alt="Captura de pantalla principal de Pelipunto">
-  <img src="./screenshots/v1.0_details_screen.png" width="250" alt="Captura de pantalla de detalles de Pelipunto">
+  <img src="./screenshots/screenshot_login.png" width="250" alt="Captura de pantalla del Login">
+  <img src="./screenshots/screenshot_home.png" width="250" alt="Captura de pantalla principal de Pelipunto">
+  <img src="./screenshots/screenshot_settings.png" width="250" alt="Captura de pantalla de ajustes">
 </p>
 
 <h3 align="center">Creado/Adaptado por:</h3>
 <p align="center">
   <a href="https://github.com/gabiru05">Gabriel Ruiz (gabiru05)</a>
-  </p>
+</p>
 
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="línea horizontal RGB arcoíris súper delgada">
 
 <h2 align="center">Características Principales</h2>
 
 <ul>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Sistema de Autenticación Completo:</strong> Inicio de sesión con Google y mediante correo/contraseña utilizando Firebase Authentication.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Arquitectura Limpia Multi-módulo:</strong> El código está separado por capas (presentación, dominio, datos) y funcionalidades (discover, trending, detail), facilitando el mantenimiento y la escalabilidad.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Descubrimiento de Películas:</strong> Pantalla principal con un carrusel interactivo que muestra las películas populares del momento.</li>
-  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Tendencias:</strong> Sección que muestra una lista de las películas en tendencia.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Detalles Completos:</strong> Al seleccionar una película, se accede a una pantalla de detalles con sinopsis, póster, y más información.</li>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Solución de Bug de Logout:</strong> Corregido el flujo de cierre de sesión para asegurar que se pueda reingresar seleccionando una cuenta de Google sin que la app se congele.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Interfaz 100% Compose:</strong> UI completamente construida con Jetpack Compose y Material 3.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/BlueCheckCircleMark.png" width="20" alt="icono de característica"> <strong>Asincronía con Coroutines:</strong> Todas las operaciones de red y base de datos se manejan de forma eficiente con Coroutines y Flow.</li>
 </ul>
 
 <h3 align="center">Funcionalidades Planeadas (Roadmap)</h3>
 <ul>
-  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/PencilWrite.png" width="20" alt="icono de planeado"> Implementar sistema de <strong>Login y Registro</strong> de usuarios.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/PencilWrite.png" width="20" alt="icono de planeado"> Añadir seguridad basada en <strong>Tokens (JWT)</strong> con tiempo de expiración.</li>
   <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/PencilWrite.png" width="20" alt="icono de planeado"> Desarrollar la funcionalidad de <strong>calificar películas</strong> y guardar la puntuación por usuario.</li>
-  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/PencilWrite.png" width="20" alt="icono de planeado"> Opción de <strong>cierre de sesión</strong> (Logout).</li>
+  <li><img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/PNGs/PencilWrite.png" width="20" alt="icono de planeado"> Crear una lista de "Favoritos" o "Películas para ver".</li>
 </ul>
 
 <img src="https://github.com/gabiru05/Gaby_Resource/blob/master/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="línea horizontal RGB arcoíris súper delgada">
@@ -80,6 +81,7 @@
   <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jetpackcompose/jetpackcompose-original.svg" width="20" alt="Icono de Jetpack Compose"> <strong>Jetpack Compose:</strong> Toolkit para construir UI nativas.</li>
   <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-plain.svg" width="20" alt="Icono de Android"> <strong>Arquitectura Limpia Multi-módulo.</strong></li>
   <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/google/google-original.svg" width="20" alt="Icono de Dagger Hilt"> <strong>Hilt:</strong> Inyección de dependencias.</li>
+  <li><img src="https://i.imgur.com/T819n4G.png" width="20" alt="Icono de Firebase"> <strong>Firebase Authentication:</strong> Para el sistema de login y registro.</li>
   <li><img src="https://i.imgur.com/T819n4G.png" width="20" alt="Icono de Retrofit"> <strong>Retrofit & OkHttp:</strong> Cliente HTTP para consumir la API REST.</li>
   <li><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" width="20" alt="Icono de Kotlin Coroutines"> <strong>Coroutines & Flow:</strong> Para manejo de asincronía.</li>
   <li><strong>Room:</strong> Librería de persistencia para la base de datos local.</li>

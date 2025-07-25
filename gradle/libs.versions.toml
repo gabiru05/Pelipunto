@@ -1,10 +1,9 @@
-
 [versions]
 # Android Gradle Plugin y Kotlin
-agp = "8.4.1"  # Usar una versión estable de AGP compatible con todo el ecosistema
+agp = "8.4.1"
 kotlin = "1.9.0"
-ksp = "1.9.0-1.0.13" # KSP debe coincidir con la versión de Kotlin
-composeCompiler = "1.5.1" # Versión del compilador de Compose para Kotlin 1.9.0
+ksp = "1.9.0-1.0.13"
+composeCompiler = "1.5.1"
 
 # AndroidX Core & Lifecycle
 coreKtx = "1.13.1"
@@ -20,14 +19,14 @@ materialIconsExtended = "1.6.8"
 navigationCompose = "2.7.7"
 
 # Hilt (Inyección de dependencias)
-hilt = "2.49" # Versión unificada para Hilt
+hilt = "2.49"
 hiltNavigationCompose = "1.2.0"
 
 # Red (Network)
 retrofit = "2.9.0"
 okhttp = "4.12.0"
-loggingInterceptor = "4.12.0" # Alineado con la versión de OkHttp
-kotlinxSerializationJson = "1.6.3"
+loggingInterceptor = "4.12.0"
+kotlinxSerializationJson = "1.6.3" # La versión original y compatible
 retrofit2KotlinxSerializationConverter = "1.0.0"
 
 # Imágenes
@@ -37,17 +36,16 @@ coilCompose = "2.6.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
+firebaseCrashlytics = "20.0.0"
+googleFirebaseCrashlytics = "3.0.5"
 
 [libraries]
-# AndroidX Core & Lifecycle
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeCompose" }
 androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
-
-# Compose
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
@@ -57,29 +55,21 @@ androidx-ui-util = { module = "androidx.compose.ui:ui-util" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsExtended" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
-
-# Hilt
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
-
-# Red (Network)
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
 logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 retrofit2-kotlinx-serialization-converter = { module = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter", version.ref = "retrofit2KotlinxSerializationConverter" }
-
-# Imágenes
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
-
-# Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics", version.ref = "firebaseCrashlytics" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -87,3 +77,4 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 hilt-android-gradle = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "googleFirebaseCrashlytics" }
