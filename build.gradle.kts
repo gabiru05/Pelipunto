@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
     alias(libs.plugins.hilt.android.gradle) apply false
     alias(libs.plugins.ksp) apply false
+    alias(libs.plugins.google.firebase.crashlytics) apply false
 }
 
 buildscript {
@@ -11,4 +12,3 @@ buildscript {
         classpath("com.google.gms:google-services:4.4.1")
     }
 }
-
