@@ -29,6 +29,7 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.foundation.clickable
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
+import com.pelipunto.app.R
 
 @Composable
 fun RegisterScreen(
@@ -165,7 +166,7 @@ fun RegisterScreen(
                         .height(48.dp)
                 ) {
                     Icon(
-                        painter = painterResource(id = android.R.drawable.ic_dialog_email),
+                        painter = painterResource(id = R.drawable.google_icon),
                         contentDescription = "Google",
                         tint = Color.Unspecified,
                         modifier = Modifier.size(20.dp)
