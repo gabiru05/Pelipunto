@@ -27,6 +27,9 @@ class DetailViewModel @Inject constructor(
     private val _detailState = MutableStateFlow(DetailState())
     val detailState = _detailState.asStateFlow()
 
+    private val _trailerKeyState = MutableStateFlow<String?>(null)
+    val trailerKeyState = _trailerKeyState.asStateFlow()
+
     private val movieId: Int = savedStateHandle.get<Int>(K.MOVIE_ID) ?: -1
 
     init {
@@ -77,6 +80,18 @@ class DetailViewModel @Inject constructor(
                 }
             }.launchIn(viewModelScope)
         }
+    }
+
+    fun fetchTrailer() {
+        repository.getMovieTrailer(movieId).onEach { response ->
+            if (response is Response.Success) {
+                _trailerKeyState.value = response.data
+            }
+        }.launchIn(viewModelScope)
+    }
+
+    fun onTrailerDismissed() {
+        _trailerKeyState.value = null
     }
 }
 

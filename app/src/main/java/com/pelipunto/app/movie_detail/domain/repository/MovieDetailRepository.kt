@@ -10,4 +10,7 @@ interface MovieDetailRepository {
     fun fetchMovieDetail(movieId: Int): Flow<Response<MovieDetail>>
     fun fetchSimilarMovies(movieId: Int): Flow<Response<List<Movie>>>
     fun addReview(review: UserReview): Flow<Response<Unit>>
+
+    // --- NUEVA FUNCIÓN AÑADIDA ---
+    fun getMovieTrailer(movieId: Int): Flow<Response<String>>
 }

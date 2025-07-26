@@ -25,14 +25,10 @@ class MovieDetailRepositoryImpl @Inject constructor(
 
     override fun fetchMovieDetail(movieId: Int): Flow<Response<MovieDetail>> = flow {
         emit(Response.Loading())
-
         val movieDetailDto = movieDetailApiService.fetchMovieDetail(movieId)
         val userReviews: List<Review> = firestoreDataSource.getReviewsForMovie(movieId).map { it.toDomainModel() }
-
         val movieDetailFromApi = apiDetailMapper.mapToDomain(movieDetailDto)
-
         val combinedReviews = (movieDetailFromApi.reviews + userReviews).sortedByDescending { it.createdAt }
-
         val finalMovieDetail = movieDetailFromApi.copy(reviews = combinedReviews)
         emit(Response.Success(finalMovieDetail))
     }.catch { e ->
@@ -42,7 +38,6 @@ class MovieDetailRepositoryImpl @Inject constructor(
 
     override fun fetchSimilarMovies(movieId: Int): Flow<Response<List<Movie>>> = flow {
         emit(Response.Loading())
-        // Asegúrate de que tu MovieDetailApiService tenga un método 'fetchSimilarMovies'
         val movieDto = movieDetailApiService.fetchSimilarMovies(movieId)
         apiMovieMapper.mapToDomain(movieDto).apply {
             emit(Response.Success(this))
@@ -59,6 +54,24 @@ class MovieDetailRepositoryImpl @Inject constructor(
             emit(Response.Success(Unit))
         } else {
             emit(Response.Error(result.exceptionOrNull() ?: Exception("Error al añadir la reseña")))
+        }
+    }.catch { e ->
+        e.printStackTrace()
+        emit(Response.Error(e))
+    }
+
+
+    override fun getMovieTrailer(movieId: Int): Flow<Response<String>> = flow<Response<String>> {
+        val response = movieDetailApiService.getMovieVideos(movieId)
+        val trailerKey = response.results
+            ?.firstOrNull { it.site == "YouTube" && it.type == "Trailer" && it.official == true }
+            ?.key
+            ?: response.results?.firstOrNull { it.site == "YouTube" && it.type == "Trailer" }?.key
+
+        if (trailerKey != null) {
+            emit(Response.Success(trailerKey))
+        } else {
+            emit(Response.Error(Exception("Tráiler no encontrado")))
         }
     }.catch { e ->
         e.printStackTrace()

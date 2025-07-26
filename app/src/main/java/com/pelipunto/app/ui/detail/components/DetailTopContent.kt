@@ -2,7 +2,6 @@ package com.pelipunto.app.ui.detail.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Movie
@@ -23,22 +22,21 @@ import coil.request.ImageRequest
 import com.pelipunto.app.R
 import com.pelipunto.app.movie_detail.domain.models.MovieDetail
 import com.pelipunto.app.ui.home.components.MovieCard
-import com.pelipunto.app.ui.theme.LargePadding
 import com.pelipunto.app.ui.theme.MediumPadding
 
 @Composable
 fun DetailTopContent(
     modifier: Modifier = Modifier,
     movieDetail: MovieDetail,
-    onNavigateUp: () -> Unit
+    onNavigateUp: () -> Unit,
+    onWatchTrailerClick: () -> Unit
 ) {
     val imgRequest = ImageRequest.Builder(LocalContext.current)
         .data("https://image.tmdb.org/t/p/w780${movieDetail.posterPath}")
         .crossfade(true)
         .build()
 
-    Box(modifier = modifier.height(400.dp)) { // Damos una altura más controlada
-        // Imagen de fondo
+    Box(modifier = modifier.height(400.dp)) {
         AsyncImage(
             model = imgRequest,
             contentDescription = null,
@@ -47,7 +45,6 @@ fun DetailTopContent(
             placeholder = painterResource(id = R.drawable.bg_image_movie)
         )
 
-        // Gradiente para asegurar legibilidad del texto
         Box(
             modifier = Modifier
                 .fillMaxSize()
@@ -59,14 +56,12 @@ fun DetailTopContent(
                 )
         )
 
-        // Contenido superpuesto
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(MediumPadding),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
-            // Botón para volver atrás
             IconButton(onClick = onNavigateUp) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.ArrowBack,
@@ -75,9 +70,7 @@ fun DetailTopContent(
                 )
             }
 
-            // Información y botones de acción en la parte inferior
             Column(verticalArrangement = Arrangement.spacedBy(MediumPadding)) {
-                // Rating y Fecha
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(MediumPadding)
@@ -95,13 +88,12 @@ fun DetailTopContent(
                     Text(text = movieDetail.releaseDate, style = MaterialTheme.typography.bodyMedium, color = Color.White)
                 }
 
-                // Botones de acción
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.spacedBy(MediumPadding)
                 ) {
                     Button(
-                        onClick = { /*TODO*/ },
+                        onClick = { /*TODO: Implementar Ver Ahora*/ },
                         modifier = Modifier.weight(1f)
                     ) {
                         Icon(Icons.Default.PlayArrow, contentDescription = null)
@@ -109,7 +101,7 @@ fun DetailTopContent(
                         Text("Ver Ahora")
                     }
                     FilledTonalButton(
-                        onClick = { /*TODO*/ },
+                      onClick = onWatchTrailerClick,
                         modifier = Modifier.weight(1f)
                     ) {
                         Icon(Icons.Default.Movie, contentDescription = null)
