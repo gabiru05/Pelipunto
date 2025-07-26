@@ -8,6 +8,7 @@ plugins {
     alias(libs.plugins.hilt.android.gradle)
     alias(libs.plugins.ksp)
     alias(libs.plugins.google.firebase.crashlytics)
+    id("com.google.gms.google-services") // Plugin de Google Services en su lugar correcto
 }
 
 val localProperties = Properties()
@@ -25,7 +26,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.5"
+        versionName = "1.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -46,11 +47,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17 // Actualizado a Java 17
+        targetCompatibility = JavaVersion.VERSION_17 // Actualizado a Java 17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17" // Actualizado a Java 17
     }
     buildFeatures {
         compose = true
@@ -67,16 +68,57 @@ android {
 }
 
 dependencies {
+    // Core y Lifecycle de AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.core.splashscreen)
+
+    // Jetpack Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation(libs.androidx.material.icons.extended)
+    implementation(libs.androidx.ui.util)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+    // Navegación
+    implementation(libs.androidx.navigation.compose)
+
+    // Hilt (Inyección de Dependencias)
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    // Red (Networking)
+    implementation(libs.retrofit)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.retrofit2.kotlinx.serialization.converter)
+
+    // Imágenes
+    implementation(libs.coil.compose)
+
+    // Firebase (Usando la BoM)
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
     implementation(libs.firebase.crashlytics)
+    implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("com.google.firebase:firebase-firestore-ktx")
+
+    // Google Services y Coroutines
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.0")
+
+    // Librerías de terceros (Accompanist y Media3)
+    implementation("com.google.accompanist:accompanist-pager-indicators:0.34.0")
+    implementation("androidx.media3:media3-exoplayer:1.3.1")
+    implementation("androidx.media3:media3-ui:1.3.1")
+
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -84,36 +126,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(libs.androidx.navigation.compose)
-    implementation(libs.androidx.material.icons.extended)
-    implementation(libs.androidx.ui.util)
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation(libs.androidx.lifecycle.runtime.compose)
-    implementation(libs.coil.compose)
-    implementation(libs.retrofit2.kotlinx.serialization.converter)
-    implementation(libs.retrofit)
-    implementation(libs.okhttp)
-    implementation(libs.logging.interceptor)
-    implementation(libs.kotlinx.serialization.json)
-    implementation(libs.hilt.android)
-    ksp(libs.hilt.compiler)
-    implementation(libs.androidx.hilt.navigation.compose)
-    implementation(libs.androidx.core.splashscreen)
-    implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.android.gms:play-services-auth:21.1.0")
-    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
-    implementation("com.google.accompanist:accompanist-pager-indicators:0.34.0")
-    implementation("androidx.media3:media3-exoplayer:1.3.1")
-    implementation("androidx.media3:media3-ui:1.3.1")
 }
 
-apply(plugin = "com.google.gms.google-services")
-
-// Bloque para forzar la versión de dependencias conflictivas
+// ESTE BLOQUE ES LA SOLUCIÓN AL ERROR DE SERIALIZACIÓN
 configurations.all {
     resolutionStrategy {
         force(libs.kotlinx.serialization.json)
-        // Forzamos también la librería "core", que es la que daba el error original
-        force("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:${libs.versions.kotlinxSerializationJson.get()}")
     }
 }

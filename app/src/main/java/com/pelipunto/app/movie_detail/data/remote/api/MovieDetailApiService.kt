@@ -1,6 +1,6 @@
 package com.pelipunto.app.movie_detail.data.remote.api
 
-import com.pelipunto.app.BuildConfig // Este import es correcto
+import com.pelipunto.app.BuildConfig
 import com.pelipunto.app.movie.data.remote.models.MovieDto
 import com.pelipunto.app.movie_detail.data.remote.models.MovieDetailDto
 import com.pelipunto.app.utils.K
@@ -14,17 +14,15 @@ interface MovieDetailApiService {
 
     @GET("${K.MOVIE_DETAIL_ENDPOINT}/{$MOVIE_ID}")
     suspend fun fetchMovieDetail(
-        @Path(MOVIE_ID) movieId:Int,
-        // AQUÍ ESTÁ EL PRIMER CAMBIO
+        @Path(MOVIE_ID) movieId: Int,
         @Query("api_key") apiKey: String = BuildConfig.TMDB_API_KEY,
         @Query("append_to_response") appendToResponse: String = "credits,reviews"
-    ):MovieDetailDto
+    ): MovieDetailDto
 
-    @GET(K.MOVIE_ENDPOINT)
-    suspend fun fetchMovie(
-        // Y AQUÍ ESTÁ EL SEGUNDO CAMBIO
+    @GET("${K.MOVIE_DETAIL_ENDPOINT}/{$MOVIE_ID}/similar")
+    suspend fun fetchSimilarMovies(
+        @Path(MOVIE_ID) movieId: Int,
         @Query("api_key") apiKey: String = BuildConfig.TMDB_API_KEY,
         @Query("include_adult") includeAdult: Boolean = false
     ): MovieDto
-
 }

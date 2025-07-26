@@ -36,7 +36,6 @@ fun DetailBodyContent(
         modifier = modifier.padding(vertical = LargePadding),
         verticalArrangement = Arrangement.spacedBy(LargePadding)
     ) {
-        // --- SECCIÓN DE INFORMACIÓN PRINCIPAL ---
         Column(modifier = Modifier.padding(horizontal = LargePadding)) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -56,7 +55,6 @@ fun DetailBodyContent(
 
         Divider(thickness = 1.dp, color = MaterialTheme.colorScheme.surfaceVariant)
 
-        // --- SECCIÓN ELENCO ---
         CastSection(
             cast = movieDetail.cast,
             onActorClick = onActorClick,
@@ -65,14 +63,12 @@ fun DetailBodyContent(
 
         Divider(thickness = 1.dp, color = MaterialTheme.colorScheme.surfaceVariant)
 
-        // --- SECCIÓN RESEÑAS ---
         ReviewsSection(
             reviews = movieDetail.reviews,
             onSeeAllClick = onSeeAllReviewsClick
         )
     }
 }
-
 
 @Composable
 private fun GenreChips(genres: List<String>) {
@@ -106,7 +102,6 @@ private fun ActionIconBtn(icon: ImageVector, label: String) {
     }
 }
 
-
 @Composable
 private fun SectionTitle(title: String, onSeeAllClick: (() -> Unit)? = null) {
     Row(
@@ -129,13 +124,13 @@ private fun SectionTitle(title: String, onSeeAllClick: (() -> Unit)? = null) {
 private fun CastSection(
     cast: List<com.pelipunto.app.movie_detail.domain.models.Cast>,
     onActorClick: (Int) -> Unit,
-    onSeeAllClick: () -> Unit // Acepta el evento
+    onSeeAllClick: () -> Unit
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(MediumPadding)) {
-        SectionTitle(title = "Elenco Principal", onSeeAllClick = onSeeAllClick) // Pasa el evento al título
+        SectionTitle(title = "Elenco Principal", onSeeAllClick = onSeeAllClick)
         LazyRow(contentPadding = PaddingValues(horizontal = LargePadding)) {
             items(cast) { actor ->
-                // ActorItem(actor = actor, modifier = Modifier.clickable { onActorClick(actor.id) })
+                // Aquí va tu Composable ActorItem
             }
         }
     }
@@ -143,7 +138,7 @@ private fun CastSection(
 
 @Composable
 private fun ReviewsSection(
-    reviews: List<Review>,
+    reviews: List<Review>, // El tipo 'Review' ahora se resuelve
     onSeeAllClick: () -> Unit
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(MediumPadding)) {

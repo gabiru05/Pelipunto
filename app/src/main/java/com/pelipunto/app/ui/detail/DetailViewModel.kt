@@ -3,14 +3,18 @@ package com.pelipunto.app.ui.detail
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.google.firebase.auth.FirebaseAuth
 import com.pelipunto.app.movie.domain.models.Movie
 import com.pelipunto.app.movie_detail.domain.models.MovieDetail
+import com.pelipunto.app.movie_detail.domain.models.UserReview
 import com.pelipunto.app.movie_detail.domain.repository.MovieDetailRepository
 import com.pelipunto.app.utils.K
-import com.pelipunto.app.utils.collectAndHandle
+import com.pelipunto.app.utils.Response
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -23,64 +27,57 @@ class DetailViewModel @Inject constructor(
     private val _detailState = MutableStateFlow(DetailState())
     val detailState = _detailState.asStateFlow()
 
-    val id: Int = savedStateHandle.get<Int>(K.MOVIE_ID) ?: -1
+    private val movieId: Int = savedStateHandle.get<Int>(K.MOVIE_ID) ?: -1
 
     init {
-        fetchMovieDetailById()
-    }
-
-    private fun fetchMovieDetailById() = viewModelScope.launch {
-        if (id == -1) {
-            _detailState.update {
-                it.copy(isLoading = false, error = "Movie not found")
-            }
+        if (movieId != -1) {
+            fetchMovieDetailById()
+            fetchSimilarMovies()
         } else {
-            repository.fetchMovieDetail(id).collectAndHandle(
-                onError = { error ->
-                    _detailState.update {
-                        it.copy(isLoading = false, error = error?.message)
-                    }
-                },
-                onLoading = {
-                    _detailState.update {
-                        it.copy(isLoading = true, error = null)
-                    }
-                }
-            ) { movieDetail ->
-                _detailState.update {
-                    it.copy(
-                        isLoading = false,
-                        error = null,
-                        movieDetail = movieDetail
-                    )
-                }
-            }
+            _detailState.update { it.copy(isLoading = false, error = "Movie ID not found") }
         }
     }
 
-    fun fetchMovie() = viewModelScope.launch {
-        repository.fetchMovie().collectAndHandle(
-            onError = { error ->
-                _detailState.update {
-                    it.copy(isMovieLoading = false, error = error?.message)
-                }
-            },
-            onLoading = {
-                _detailState.update {
-                    it.copy(isMovieLoading = true, error = null)
-                }
+    private fun fetchMovieDetailById() {
+        repository.fetchMovieDetail(movieId).onEach { response ->
+            when (response) {
+                is Response.Loading -> _detailState.update { it.copy(isLoading = true) }
+                is Response.Success -> _detailState.update { it.copy(isLoading = false, movieDetail = response.data) }
+                is Response.Error -> _detailState.update { it.copy(isLoading = false, error = response.error?.message) }
             }
-        ) { movies ->
-            _detailState.update {
-                it.copy(
-                    isMovieLoading = false,
-                    error = null,
-                    movies = movies
-                )
-            }
-        }
+        }.launchIn(viewModelScope)
     }
 
+    private fun fetchSimilarMovies() {
+        repository.fetchSimilarMovies(movieId).onEach { response ->
+            when (response) {
+                is Response.Loading -> _detailState.update { it.copy(isMovieLoading = true) }
+                is Response.Success -> _detailState.update { it.copy(isMovieLoading = false, movies = response.data ?: emptyList()) }
+                is Response.Error -> _detailState.update { it.copy(isMovieLoading = false) }
+            }
+        }.launchIn(viewModelScope)
+    }
+
+    fun postReview(rating: Float, comment: String) {
+        viewModelScope.launch {
+            val user = FirebaseAuth.getInstance().currentUser ?: return@launch
+            val newReview = UserReview(
+                movieId = movieId,
+                userId = user.uid,
+                userName = user.displayName ?: "Anónimo",
+                userPhotoUrl = user.photoUrl?.toString(),
+                rating = rating.toDouble(),
+                comment = comment
+            )
+            repository.addReview(newReview).onEach { response ->
+                when (response) {
+                    is Response.Success -> fetchMovieDetailById()
+                    is Response.Error -> _detailState.update { it.copy(error = response.error?.message) }
+                    is Response.Loading -> { /* No-op */ }
+                }
+            }.launchIn(viewModelScope)
+        }
+    }
 }
 
 data class DetailState(
